@@ -475,6 +475,7 @@
       <button onclick="filterCategory('hematologia')" class="tab-btn" id="tab-hematologia">🩸 Hematología</button>
       <button onclick="filterCategory('quimica')" class="tab-btn" id="tab-quimica">🧪 Química Clínica</button>
       <button onclick="filterCategory('inmunoensayo')" class="tab-btn" id="tab-inmunoensayo">🧬 Inmunoensayo & Nefelometría</button>
+      <button onclick="filterCategory('orina')" class="tab-btn" id="tab-orina">🩺 Uroanálisis (Orina)</button>
       <button onclick="filterCategory('electrolitos')" class="tab-btn" id="tab-electrolitos">⚡ Gases, Electrolitos & HPLC</button>
     </div>
   </div>
@@ -721,7 +722,40 @@
       </div>
     </section>
 
-    <!-- 4. GASES, ELECTROLITOS & HPLC -->
+    <!-- 4. UROANÁLISIS / ANALIZADOR DE ORINA -->
+    <section id="orina" class="category-section">
+      <div class="category-header">
+        <div>
+          <span class="eq-badge">División Diagnóstico de Orina</span>
+          <h2 class="category-title">Uroanálisis & Tiras de Orina</h2>
+        </div>
+      </div>
+      <div class="equipment-grid">
+        
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_orina.jpg" alt="Genrui H-Series Analizador de Orina">
+            </div>
+            <span class="eq-badge">Uroanálisis & Tiras Reactivas</span>
+            <h3 class="eq-name">Genrui H-Series (H-50 / H-100 / H-500)</h3>
+            <p class="eq-desc">Analizadores de orina automatizados y semiautomatizados por fotometría de reflectancia de alta precisión para la lectura estandarizada de tiras de uroanálisis.</p>
+            <ul class="eq-specs">
+              <li>✓ Lectura Cuantitativa de 11 a 14 Parámetros</li>
+              <li>✓ Rendimiento: 120 a 500 Tiras por Hora</li>
+              <li>✓ Corrección Automática de Color e Interferencia</li>
+              <li>✓ Impresora Térmica e Interfaz LIS Integrada</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Analizador%20de%20Orina%20Genrui" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Analizador de Orina por WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. GASES, ELECTROLITOS & HPLC -->
     <section id="electrolitos" class="category-section">
       <div class="category-header">
         <div>
@@ -869,7 +903,7 @@
     // Auto-filter based on URL hash (e.g. equipos.html#hematologia)
     window.addEventListener('DOMContentLoaded', () => {
       const hash = window.location.hash.replace('#', '');
-      if (hash && ['hematologia', 'quimica', 'inmunoensayo', 'electrolitos'].includes(hash)) {
+      if (hash && ['hematologia', 'quimica', 'inmunoensayo', 'orina', 'electrolitos'].includes(hash)) {
         filterCategory(hash);
         const targetSec = document.getElementById(hash);
         if (targetSec) targetSec.scrollIntoView({ behavior: 'smooth' });
@@ -878,7 +912,7 @@
 
     window.addEventListener('hashchange', () => {
       const hash = window.location.hash.replace('#', '');
-      if (hash && ['hematologia', 'quimica', 'inmunoensayo', 'electrolitos'].includes(hash)) {
+      if (hash && ['hematologia', 'quimica', 'inmunoensayo', 'orina', 'electrolitos'].includes(hash)) {
         filterCategory(hash);
         const targetSec = document.getElementById(hash);
         if (targetSec) targetSec.scrollIntoView({ behavior: 'smooth' });
