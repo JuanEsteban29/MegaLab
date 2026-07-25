@@ -668,6 +668,65 @@
       margin-top: 6px;
     }
 
+    /* SELECTOR MÓVIL DE CATEGORÍAS DEL CATÁLOGO */
+    .mobile-catalog-selector {
+      display: none;
+      margin-bottom: 20px;
+      background: #ffffff;
+      border: 1px solid #bae6fd;
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 4px 18px rgba(2, 132, 199, 0.08);
+    }
+
+    .mobile-cat-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: #075985;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    .mobile-select-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .mobile-cat-dropdown {
+      width: 100%;
+      height: 52px;
+      background: #f0f9ff;
+      border: 2px solid #0284c7;
+      border-radius: 12px;
+      padding: 0 42px 0 16px;
+      color: #075985;
+      font-size: 1rem;
+      font-weight: 700;
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.1);
+      cursor: pointer;
+    }
+
+    .mobile-cat-dropdown:focus {
+      border-color: #0369a1;
+      box-shadow: 0 0 12px rgba(2, 132, 199, 0.25);
+    }
+
+    .mobile-select-arrow {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #0284c7;
+      pointer-events: none;
+    }
+
     .search-reagents-box {
       margin-bottom: 20px;
       position: relative;
@@ -1084,6 +1143,9 @@
       .slider-arrow { width: 36px; height: 36px; font-size: 0.9rem; }
       .slider-arrow.prev { left: 10px; }
       .slider-arrow.next { right: 10px; }
+      .reagents-layout { grid-template-columns: 1fr !important; gap: 16px; }
+      .reagents-sidebar { display: none !important; }
+      .mobile-catalog-selector { display: block !important; }
     }
 
     /* PANTALLAS DE CELULAR (Hasta 768px) */
@@ -1492,6 +1554,28 @@
 
       <div class="reagents-layout">
         
+        <!-- Selector Móvil Rápido de Categorías (Visible solo en teléfonos/tablets) -->
+        <div class="mobile-catalog-selector">
+          <label class="mobile-cat-label" for="mobileCatSelect">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+            <span>Seleccionar Línea del Catálogo:</span>
+          </label>
+          <div class="mobile-select-wrapper">
+            <select id="mobileCatSelect" class="mobile-cat-dropdown" onchange="selectCategory(this.value)">
+              <option value="quimica">🧪 Química Clínica (29 productos)</option>
+              <option value="hematologia">🩸 Hematología (12 productos)</option>
+              <option value="pa50">🔬 Nefelometría - PA50 (14 productos)</option>
+              <option value="fa50">🧬 Inmunoensayo - FA50 & AFR-600 (44 productos)</option>
+              <option value="electrolitos">⚡ Electrolitos & Gases (7 productos)</option>
+              <option value="hplc">🧪 HPLC - LD-560 (9 productos)</option>
+              <option value="latex">🔬 Aglutinación en Látex (8 productos)</option>
+              <option value="rapidas">🩺 Pruebas Rápidas (33 productos)</option>
+              <option value="insumos">📦 Instrumentos & Insumos (20 productos)</option>
+            </select>
+            <svg class="mobile-select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+        </div>
+
         <!-- Sidebar por Línea del PDF -->
         <div class="reagents-sidebar">
           <div class="reagents-nav-title">
@@ -2072,6 +2156,11 @@
       document.querySelectorAll('.reagent-cat-btn').forEach(btn => {
         btn.classList.toggle('active', btn.getAttribute('data-cat') === catKey);
       });
+
+      const mobileSelect = document.getElementById('mobileCatSelect');
+      if (mobileSelect) {
+        mobileSelect.value = catKey;
+      }
 
       const titleEl = document.getElementById('catPanelTitle');
       const brandEl = document.getElementById('catPanelBrand');
