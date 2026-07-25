@@ -528,6 +528,92 @@
       border-radius: 4px;
     }
 
+    /* MARCAS - CARROUSEL MOVIBLE INFINITO DE MARCAS OFICIALES */
+    .brands-carousel-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding: 24px 0;
+      margin-top: 32px;
+    }
+
+    .brands-carousel-container::before,
+    .brands-carousel-container::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 120px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .brands-carousel-container::before {
+      left: 0;
+      background: linear-gradient(to right, #e0f2fe 0%, rgba(224, 242, 254, 0) 100%);
+    }
+
+    .brands-carousel-container::after {
+      right: 0;
+      background: linear-gradient(to left, #e0f2fe 0%, rgba(224, 242, 254, 0) 100%);
+    }
+
+    .brands-track {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      width: max-content;
+      animation: brandsMarquee 20s linear infinite;
+    }
+
+    .brands-carousel-container:hover .brands-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes brandsMarquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .brand-logo-card {
+      background: #ffffff;
+      border: 1px solid #bae6fd;
+      border-radius: 14px;
+      padding: 16px 28px;
+      min-width: 230px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.08);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .brand-logo-card:hover {
+      transform: translateY(-5px) scale(1.05);
+      border-color: #0284c7;
+      box-shadow: 0 12px 28px rgba(2, 132, 199, 0.22);
+    }
+
+    .brand-logo-card img {
+      max-height: 55px;
+      max-width: 175px;
+      object-fit: contain;
+      image-rendering: high-quality;
+    }
+
+    .brand-logo-card .brand-pill {
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: #0284c7;
+      background: #e0f2fe;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+
     .institutional-cta-banner {
       background: linear-gradient(135deg, #075985 0%, #0369a1 100%);
       border: 1px solid #38bdf8;
@@ -1732,49 +1818,68 @@
     </div>
   </section>
 
-  <!-- MARCAS OFICIALES REPRESENTADAS -->
+  <!-- MARCAS OFICIALES REPRESENTADAS EN CARRUSEL MOVIBLE EN VIVO -->
   <section id="marcas" class="section-padding brands-section">
     <div class="container fade-up" style="text-align: center;">
       <span class="section-tag" data-es="Respaldo Internacional" data-en="International Support">Respaldo Internacional</span>
-      <h2 class="section-title" data-es="Marcas con las que Trabajamos" data-en="Brands We Work With">Marcas con las que Trabajamos</h2>
+      <h2 class="section-title" data-es="Marcas Oficiales con las que Trabajamos" data-en="Official Brands We Work With">Marcas Oficiales con las que Trabajamos</h2>
       <p style="color: #475569; max-width: 750px; margin: 0 auto 10px auto;" data-es="Garantizamos tecnología de punta y calidad en cada producto para satisfacer las necesidades de laboratorios y profesionales de la salud en Panamá:" data-en="We guarantee state-of-the-art technology and quality in every product to meet the needs of laboratories and health professionals in Panama:">
         Garantizamos tecnología de punta y calidad en cada producto para satisfacer las necesidades de laboratorios y profesionales de la salud en Panamá:
       </p>
 
-      <div class="brands-grid-official">
-        <!-- 1. Genrui -->
-        <div class="brand-official-card brand-card-genrui">
-          <span class="brand-number-tag">01</span>
-          <span class="brand-typography-name">GENRUI BIOTECH</span>
-          <span class="brand-pill-category">Hematología & Química</span>
-        </div>
+      <div class="brands-carousel-container">
+        <div class="brands-track">
+          <!-- Set 1 -->
+          <div class="brand-logo-card">
+            <img src="assets/brand_genrui_color.png" alt="Genrui Biotech">
+            <span class="brand-pill">Genrui Biotech</span>
+          </div>
 
-        <!-- 2. Cypress -->
-        <div class="brand-official-card brand-card-cypress">
-          <span class="brand-number-tag">02</span>
-          <span class="brand-typography-name">CYPRESS DIAGNOSTICS</span>
-          <span class="brand-pill-category">Reactivos & Diagnóstico</span>
-        </div>
+          <div class="brand-logo-card">
+            <img src="assets/brand_cypress_color.png" alt="Cypress Diagnostics">
+            <span class="brand-pill">Cypress Diagnostics</span>
+          </div>
 
-        <!-- 3. Labnovation -->
-        <div class="brand-official-card brand-card-labnovation">
-          <span class="brand-number-tag">03</span>
-          <span class="brand-typography-name">LABNOVATION</span>
-          <span class="brand-pill-category">HbA1c & Controles</span>
-        </div>
+          <div class="brand-logo-card">
+            <img src="assets/brand_labnovation_color.png" alt="Labnovation">
+            <span class="brand-pill">Labnovation</span>
+          </div>
 
-        <!-- 4. Seamaty -->
-        <div class="brand-official-card brand-card-seamaty">
-          <span class="brand-number-tag">04</span>
-          <span class="brand-typography-name">SEAMATY</span>
-          <span class="brand-pill-category">Soluciones POCT</span>
-        </div>
+          <div class="brand-logo-card">
+            <img src="assets/brand_seamaty_color.png" alt="Seamaty">
+            <span class="brand-pill">Seamaty</span>
+          </div>
 
-        <!-- 5. All Test -->
-        <div class="brand-official-card brand-card-alltest">
-          <span class="brand-number-tag">05</span>
-          <span class="brand-typography-name">ALLTEST</span>
-          <span class="brand-pill-category">Pruebas Rápidas</span>
+          <div class="brand-logo-card">
+            <img src="assets/brand_alltest_color.png" alt="AllTest">
+            <span class="brand-pill">AllTest</span>
+          </div>
+
+          <!-- Set 2 (Duplicado para Bucle Infinito Continuo) -->
+          <div class="brand-logo-card">
+            <img src="assets/brand_genrui_color.png" alt="Genrui Biotech">
+            <span class="brand-pill">Genrui Biotech</span>
+          </div>
+
+          <div class="brand-logo-card">
+            <img src="assets/brand_cypress_color.png" alt="Cypress Diagnostics">
+            <span class="brand-pill">Cypress Diagnostics</span>
+          </div>
+
+          <div class="brand-logo-card">
+            <img src="assets/brand_labnovation_color.png" alt="Labnovation">
+            <span class="brand-pill">Labnovation</span>
+          </div>
+
+          <div class="brand-logo-card">
+            <img src="assets/brand_seamaty_color.png" alt="Seamaty">
+            <span class="brand-pill">Seamaty</span>
+          </div>
+
+          <div class="brand-logo-card">
+            <img src="assets/brand_alltest_color.png" alt="AllTest">
+            <span class="brand-pill">AllTest</span>
+          </div>
         </div>
       </div>
     </div>
