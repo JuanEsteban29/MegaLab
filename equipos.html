@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Oficial de Equipos & Analizadores Clínicos | MEGA LAB S.A.</title>
+  <meta name="description" content="Catálogo completo de equipos y analizadores clínicos de diagnóstico en Panamá. Hematología, Química Clínica, Inmunoensayo, Nefelometría, Gases y Electrolitos.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-blue: #0284c7;
+      --deep-blue: #e0f2fe;
+      --cyan-gradient: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      --bg-surface: #e0f2fe;
+      --bg-card: #ffffff;
+      --accent-cyan: #0284c7;
+      --text-white: #075985;
+      --text-muted: #475569;
+      --border-color: #bae6fd;
+      --font-stack: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      --header-height: 80px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-stack);
+      background-color: #e0f2fe;
+      color: #075985;
+      line-height: 1.6;
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: #e0f2fe;
+      color: #075985;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-padding {
+      padding: 60px 0;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--header-height);
+      background: #e0f2fe;
+      border-bottom: 2px solid #bae6fd;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(2, 132, 199, 0.1);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo img {
+      height: 44px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(0, 229, 255, 0.25));
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #075985;
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-blue);
+    }
+
+    .btn-back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #0284c7;
+      color: #ffffff !important;
+      padding: 9px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+      transition: all 0.25s ease;
+    }
+
+    .btn-back-home:hover {
+      background: #0369a1;
+      transform: translateY(-2px);
+    }
+
+    /* HERO SECTION */
+    .catalog-hero {
+      margin-top: var(--header-height);
+      background: linear-gradient(135deg, #075985 0%, #0369a1 100%);
+      color: #ffffff;
+      padding: 50px 0;
+      border-bottom: 3px solid #38bdf8;
+    }
+
+    .catalog-hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .hero-title-box h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .hero-title-box p {
+      color: #e0f2fe;
+      font-size: 1.05rem;
+      max-width: 680px;
+    }
+
+    .btn-drive-folder {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ffffff;
+      color: #0284c7 !important;
+      padding: 13px 24px;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      transition: all 0.25s ease;
+    }
+
+    .btn-drive-folder:hover {
+      background: #e0f2fe;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* FILTER TABS */
+    .filter-bar {
+      background: #ffffff;
+      border-bottom: 1px solid #cbd5e1;
+      padding: 16px 0;
+      position: sticky;
+      top: var(--header-height);
+      z-index: 900;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .filter-tabs {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .tab-btn {
+      background: #f1f5f9;
+      color: #475569;
+      border: 1px solid #cbd5e1;
+      padding: 9px 18px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover, .tab-btn.active {
+      background: #0284c7;
+      color: #ffffff;
+      border-color: #0284c7;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+    }
+
+    /* CATEGORY SECTIONS & CARDS */
+    .category-section {
+      margin-bottom: 60px;
+      scroll-margin-top: 160px;
+    }
+
+    .category-header {
+      margin-bottom: 28px;
+      border-bottom: 2px solid #bae6fd;
+      padding-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .category-title {
+      font-size: 1.65rem;
+      color: #075985;
+      font-weight: 800;
+    }
+
+    .equipment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 28px;
+    }
+
+    .equipment-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+    }
+
+    .equipment-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(2, 132, 199, 0.15);
+      border-color: #38bdf8;
+    }
+
+    .eq-img-box {
+      height: 220px;
+      text-align: center;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8fafc;
+      border-radius: 10px;
+      padding: 12px;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+    }
+
+    .eq-img-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      image-rendering: high-quality;
+    }
+
+    .eq-badge {
+      background: #e0f2fe;
+      color: #0284c7;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .eq-name {
+      font-size: 1.3rem;
+      color: #0f172a;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .eq-desc {
+      font-size: 0.9rem;
+      color: #475569;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .eq-specs {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+      font-size: 0.84rem;
+      color: #0284c7;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    .btn-quote-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25D366;
+      color: #ffffff !important;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      font-weight: 800;
+      transition: background 0.2s ease;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-quote-wa:hover {
+      background: #1eb956;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #050c17;
+      color: #cbd5e1;
+      padding: 40px 0 20px;
+      border-top: 3px solid #00e5ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo-oficial.png" alt="MEGA LAB Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">← Volver al Sitio Principal</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1erZuhmSxNFhGBRoUkpTszJ8Z-ALXkN6t?usp=sharing" target="_blank" class="btn-back-home">📁 Carpeta de Fotos HD</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="catalog-hero">
+    <div class="container catalog-hero-content">
+      <div class="hero-title-box">
+        <h1>Catálogo de Equipos y Analizadores Clínicos</h1>
+        <p>Sistemas de diagnóstico analítico de alta precisión, automatización y respaldo técnico directo en Panamá.</p>
+      </div>
+      <a href="https://drive.google.com/drive/folders/1erZuhmSxNFhGBRoUkpTszJ8Z-ALXkN6t?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-drive-folder">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        Ver Fotos en Google Drive
+      </a>
+    </div>
+  </section>
+
+  <!-- FILTER TAB BAR -->
+  <div class="filter-bar">
+    <div class="container filter-tabs">
+      <button onclick="filterCategory('all')" class="tab-btn active" id="tab-all">🔬 Todos los Equipos</button>
+      <button onclick="filterCategory('hematologia')" class="tab-btn" id="tab-hematologia">🩸 Hematología</button>
+      <button onclick="filterCategory('quimica')" class="tab-btn" id="tab-quimica">🧪 Química Clínica</button>
+      <button onclick="filterCategory('inmunoensayo')" class="tab-btn" id="tab-inmunoensayo">🧬 Inmunoensayo & Nefelometría</button>
+      <button onclick="filterCategory('electrolitos')" class="tab-btn" id="tab-electrolitos">⚡ Gases, Electrolitos & HPLC</button>
+    </div>
+  </div>
+
+  <!-- MAIN CATALOG CONTENT -->
+  <main class="container section-padding">
+    
+    <!-- 1. HEMATOLOGÍA -->
+    <section id="hematologia" class="category-section">
+      <div class="category-header">
+        <div>
+          <span class="eq-badge">División Analítica</span>
+          <h2 class="category-title">Analizadores de Hematología</h2>
+        </div>
+      </div>
+      <div class="equipment-grid">
+        
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_kt8000.jpg" alt="Genrui KT-8000">
+            </div>
+            <span class="eq-badge">Diferencial 5 Partes Automatizado</span>
+            <h3 class="eq-name">Genrui KT-8000</h3>
+            <p class="eq-desc">Analizador hematológico 100% automatizado de 5 partes con carrusel continuo de muestras (walk-away), pantalla táctil a color HD y capacidad para 80 muestras/hora.</p>
+            <ul class="eq-specs">
+              <li>✓ Diferencial de 5 Partes + 2 Histogramas</li>
+              <li>✓ Sistema Automatizado Walk-Away</li>
+              <li>✓ Pantalla Táctil HD a Color de 10.4"</li>
+              <li>✓ Velocidad: 80 muestras por hora</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Genrui%20KT-8000" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Genrui KT-8000 por WhatsApp
+          </a>
+        </div>
+
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_kt6600.jpg" alt="Genrui KT-6600">
+            </div>
+            <span class="eq-badge">Diferencial 5 Partes Compacto</span>
+            <h3 class="eq-name">Genrui KT-6600</h3>
+            <p class="eq-desc">Analizador hematológico de sobremesa con tecnología de dispersión láser tri-angular y micro-volumen de muestra (20 µL), ideal para clínicas medianas.</p>
+            <ul class="eq-specs">
+              <li>✓ Dispersión Láser Tri-Angular</li>
+              <li>✓ 60 Muestras por Hora</li>
+              <li>✓ Micro-volumen de Muestra: 20 µL</li>
+              <li>✓ Almacenamiento de 60,000 Resultados</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Genrui%20KT-6600" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Genrui KT-6600 por WhatsApp
+          </a>
+        </div>
+
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_kt6600.jpg" alt="Genrui KT-6610">
+            </div>
+            <span class="eq-badge">Diferencial 5 Partes Avanzado</span>
+            <h3 class="eq-name">Genrui KT-6610</h3>
+            <p class="eq-desc">Sistema hematológico automatizado con impresora térmica integrada, análisis cuantitativo e interfaz táctil interactiva.</p>
+            <ul class="eq-specs">
+              <li>✓ Impresora Térmica Integrada</li>
+              <li>✓ Análisis Cuantitativo de 5 Partes</li>
+              <li>✓ Gestión Inteligente de Reactivos</li>
+              <li>✓ Bajo Consumo Operativo</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Genrui%20KT-6610" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Genrui KT-6610 por WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. QUÍMICA CLÍNICA -->
+    <section id="quimica" class="category-section">
+      <div class="category-header">
+        <div>
+          <span class="eq-badge">División Analítica</span>
+          <h2 class="category-title">Equipos de Química Clínica</h2>
+        </div>
+      </div>
+      <div class="equipment-grid">
+        
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_wp21a.jpg" alt="Genrui WP21A">
+            </div>
+            <span class="eq-badge">Semiautomatizado de Sobre Mesa</span>
+            <h3 class="eq-name">Genrui WP21A</h3>
+            <p class="eq-desc">Analizador bioquímico semiautomatizado compacto con incubador incorporado, cubeta de flujo de alta precisión y pantalla gráfica táctil.</p>
+            <ul class="eq-specs">
+              <li>✓ Rango de Onda: 340nm a 630nm</li>
+              <li>✓ Incubador Integrado de Muestras</li>
+              <li>✓ Cubeta de Flujo de Cuarzo</li>
+              <li>✓ Impresora Térmica Incorporada</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Genrui%20WP21A" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Genrui WP21A por WhatsApp
+          </a>
+        </div>
+
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_gs300plus.jpg" alt="Genrui GS300Plus">
+            </div>
+            <span class="eq-badge">Automatizado de Sobre Mesa</span>
+            <h3 class="eq-name">Genrui GS300Plus</h3>
+            <p class="eq-desc">Sistema bioquímico automatizado de sobremesa multifuncional con rendimiento constante de 300 pruebas/hora y lavado de 8 pasos.</p>
+            <ul class="eq-specs">
+              <li>✓ Hasta 300 Pruebas por Hora</li>
+              <li>✓ Lavado Automático de Cubetas de 8 Pasos</li>
+              <li>✓ Refrigeración Continua 24 Horas</li>
+              <li>✓ Carga Flexible de Reactivos y Muestras</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Genrui%20GS300Plus" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Genrui GS300Plus por WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. INMUNOENSAYO & NEFELOMETRÍA -->
+    <section id="inmunoensayo" class="category-section">
+      <div class="category-header">
+        <div>
+          <span class="eq-badge">División POCT & Nefelometría</span>
+          <h2 class="category-title">Inmunoensayo & Nefelometría</h2>
+        </div>
+      </div>
+      <div class="equipment-grid">
+        
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_pa50.jpg" alt="Genrui PA50">
+            </div>
+            <span class="eq-badge">Nefelometría (Proteínas Específicas)</span>
+            <h3 class="eq-name">Genrui PA50</h3>
+            <p class="eq-desc">Analizador de proteínas específicas por nefelometría cuantitativa de alta sensibilidad para marcadores cardíacos, renales e inflamatorios.</p>
+            <ul class="eq-specs">
+              <li>✓ Nefelometría Cuantitativa Láser</li>
+              <li>✓ Cuantificación de PCR, HbA1c, D-Dímero</li>
+              <li>✓ Pruebas Rápidas en 2 a 5 Minutos</li>
+              <li>✓ Pantalla Táctil HD a Color</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Genrui%20PA50" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Genrui PA50 por WhatsApp
+          </a>
+        </div>
+
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_fa50.jpg" alt="Genrui FA50 / AFR-600">
+            </div>
+            <span class="eq-badge">Inmunoensayo POCT Cuantitativo</span>
+            <h3 class="eq-name">Genrui FA50 / AFR-600</h3>
+            <p class="eq-desc">Analizador POCT cuantitativo por inmunofluorescencia para pruebas rápidas de laboratorio, urgencias y cuidados intensivos.</p>
+            <ul class="eq-specs">
+              <li>✓ Inmunofluorescencia Cuantitativa</li>
+              <li>✓ Multicanal de Procesamiento</li>
+              <li>✓ Resultados en Minutos</li>
+              <li>✓ Conexión LIS/HIS Integrada</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Genrui%20FA50" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Genrui FA50 por WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. GASES, ELECTROLITOS & HPLC -->
+    <section id="electrolitos" class="category-section">
+      <div class="category-header">
+        <div>
+          <span class="eq-badge">División Especializada</span>
+          <h2 class="category-title">Gases, Electrolitos & HPLC</h2>
+        </div>
+      </div>
+      <div class="equipment-grid">
+        
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_se1.jpg" alt="Seamaty SE1 / SG1">
+            </div>
+            <span class="eq-badge">Electrolitos & Gases Portátiles</span>
+            <h3 class="eq-name">Seamaty SE1 / SG1</h3>
+            <p class="eq-desc">Analizadores portátiles POCT de electrolitos y gases arteriales sin mantenimiento para urgencias y cuidados críticos.</p>
+            <ul class="eq-specs">
+              <li>✓ Resultados en Menos de 4 Minutos</li>
+              <li>✓ Sin Mantenimiento (Cartucho Seco)</li>
+              <li>✓ Formato Portátil Touch</li>
+              <li>✓ Batería de Alta Duración</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Seamaty%20SE1" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Seamaty SE1 por WhatsApp
+          </a>
+        </div>
+
+        <div class="equipment-card">
+          <div>
+            <div class="eq-img-box">
+              <img src="assets/eq_ld560.jpg" alt="Labnovation LD-560">
+            </div>
+            <span class="eq-badge">HbA1c por HPLC Gold Standard</span>
+            <h3 class="eq-name">Labnovation LD-560</h3>
+            <p class="eq-desc">Sistema automatizado de Cromatografía Líquida de Alta Eficiencia (HPLC) para la medición exacta y estandarizada de HbA1c.</p>
+            <ul class="eq-specs">
+              <li>✓ Metodología Gold Standard HPLC</li>
+              <li>✓ Automatización de Alto Volumen</li>
+              <li>✓ Certificación Internacional NGSP & IFCC</li>
+              <li>✓ Muestreo Directo en Tubo Primario</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20Labnovation%20LD-560" target="_blank" class="btn-quote-wa">
+            💬 Cotizar Labnovation LD-560 por WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container" style="text-align: center; line-height: 1.8;">
+      <p>&copy; 2026 MEGA LAB | Equipos, Insumos y Reactivos Clínicos en Panamá.</p>
+      <p style="font-size: 0.85rem; color: #64748b;">Todos los derechos reservados. Distribución y soporte técnico especializado.</p>
+    </div>
+  </footer>
+
+  <script>
+    function filterCategory(catId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      const activeTab = document.getElementById('tab-' + catId);
+      if (activeTab) activeTab.classList.add('active');
+
+      const sections = document.querySelectorAll('.category-section');
+      sections.forEach(sec => {
+        if (catId === 'all' || sec.id === catId) {
+          sec.style.display = 'block';
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+    }
+
+    // Auto-filter based on URL hash (e.g. equipos.html#hematologia)
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && ['hematologia', 'quimica', 'inmunoensayo', 'electrolitos'].includes(hash)) {
+        filterCategory(hash);
+        const targetSec = document.getElementById(hash);
+        if (targetSec) targetSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && ['hematologia', 'quimica', 'inmunoensayo', 'electrolitos'].includes(hash)) {
+        filterCategory(hash);
+        const targetSec = document.getElementById(hash);
+        if (targetSec) targetSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+</html>
