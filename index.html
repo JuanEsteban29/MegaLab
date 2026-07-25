@@ -130,6 +130,13 @@
       color: #075985;
     }
 
+    .brand-logo img {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: high-quality;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
     .nav-menu {
       display: flex;
       align-items: center;
@@ -229,6 +236,11 @@
       object-fit: contain;
       display: block;
       transition: transform 0.4s ease;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: high-quality;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
 
     .slide:hover .slide-img {
