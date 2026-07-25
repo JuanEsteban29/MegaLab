@@ -1459,7 +1459,7 @@
       <div class="divisions-grid">
         
         <!-- 1. HEMATOLOGÍA -->
-        <div class="division-block">
+        <div class="division-block" onclick="openEquipmentModal('hematologia')" style="cursor: pointer;">
           <div>
             <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; margin-bottom: 20px; text-align: center; height: 230px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08); overflow: hidden;">
               <img src="assets/eq_kt8000.jpg" alt="Genrui KT-8000 Analizador Hematológico" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px; image-rendering: -webkit-optimize-contrast; image-rendering: high-quality;">
@@ -1477,15 +1477,18 @@
             </ul>
           </div>
           <div>
-            <div class="brand-chips">
+            <div class="brand-chips" style="margin-bottom: 12px;">
               <span class="brand-chip">Genrui Biotech</span>
               <span class="brand-chip">Diferencial 5 Partes</span>
             </div>
+            <button class="btn-view-equipment" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; font-weight: 700; padding: 10px 14px; border-radius: 6px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s ease;">
+              🔍 Ver Equipos de Hematología
+            </button>
           </div>
         </div>
 
         <!-- 2. QUÍMICA CLÍNICA -->
-        <div class="division-block">
+        <div class="division-block" onclick="openEquipmentModal('quimica')" style="cursor: pointer;">
           <div>
             <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; margin-bottom: 20px; text-align: center; height: 230px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08); overflow: hidden;">
               <img src="assets/eq_wp21a.jpg" alt="Genrui WP21A Analizador Bioquímico" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px; image-rendering: -webkit-optimize-contrast; image-rendering: high-quality;">
@@ -1503,15 +1506,18 @@
             </ul>
           </div>
           <div>
-            <div class="brand-chips">
+            <div class="brand-chips" style="margin-bottom: 12px;">
               <span class="brand-chip">Genrui Biotech</span>
               <span class="brand-chip">WP21A & GS Series</span>
             </div>
+            <button class="btn-view-equipment" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; font-weight: 700; padding: 10px 14px; border-radius: 6px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s ease;">
+              🔍 Ver Equipos de Química
+            </button>
           </div>
         </div>
 
         <!-- 3. INMUNOENSAYO & NEFELOMETRÍA -->
-        <div class="division-block">
+        <div class="division-block" onclick="openEquipmentModal('inmunoensayo')" style="cursor: pointer;">
           <div>
             <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; margin-bottom: 20px; text-align: center; height: 230px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08); overflow: hidden;">
               <img src="assets/eq_pa50.jpg" alt="Genrui PA50 Analizador de Nefelometría" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px; image-rendering: -webkit-optimize-contrast; image-rendering: high-quality;">
@@ -1529,15 +1535,44 @@
             </ul>
           </div>
           <div>
-            <div class="brand-chips">
+            <div class="brand-chips" style="margin-bottom: 12px;">
               <span class="brand-chip">FA50 & AFR-600</span>
               <span class="brand-chip">PA50 Nefelometría</span>
             </div>
+            <button class="btn-view-equipment" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; font-weight: 700; padding: 10px 14px; border-radius: 6px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s ease;">
+              🔍 Ver Equipos de POCT
+            </button>
           </div>
         </div>
 
         <!-- 4. ELECTROLITOS, GASES & HPLC -->
-        <div class="division-block">
+        <div class="division-block" onclick="openEquipmentModal('electrolitos')" style="cursor: pointer;">
+          <div>
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; margin-bottom: 20px; text-align: center; height: 230px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08); overflow: hidden;">
+              <img src="assets/eq_se1.jpg" alt="Seamaty SE1 & Labnovation LD-560" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px; image-rendering: -webkit-optimize-contrast; image-rendering: high-quality;">
+            </div>
+            <div class="division-header">
+              <span class="division-tag" data-es="División Especializada" data-en="Specialized Division">División Especializada</span>
+              <h3 class="division-title" data-es="Gases, Electrolitos & HPLC" data-en="Gases, Electrolytes & HPLC">Gases, Electrolitos & HPLC</h3>
+            </div>
+            <p data-es="Cuidados críticos en minutos y estandarización Gold Standard de HbA1c por HPLC." data-en="Critical care in minutes and Gold Standard HbA1c standardization via HPLC.">
+              Cuidados críticos en minutos y estandarización Gold Standard de HbA1c por HPLC.
+            </p>
+            <ul class="division-features-list">
+              <li data-es="Seamaty SE1 / SG1: Electrolitos portátiles y gases arteriales de alta precisión." data-en="Seamaty SE1 / SG1: Portable electrolytes and blood gases with high precision.">Seamaty SE1 / SG1: Electrolitos portátiles y gases arteriales de alta precisión.</li>
+              <li data-es="Labnovation LD-560: Medición de HbA1c por Cromatografía Líquida (HPLC)." data-en="Labnovation LD-560: HbA1c measurement by Liquid Chromatography (HPLC).">Labnovation LD-560: Medición de HbA1c por Cromatografía Líquida (HPLC).</li>
+            </ul>
+          </div>
+          <div>
+            <div class="brand-chips" style="margin-bottom: 12px;">
+              <span class="brand-chip">Seamaty</span>
+              <span class="brand-chip">Labnovation</span>
+            </div>
+            <button class="btn-view-equipment" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; font-weight: 700; padding: 10px 14px; border-radius: 6px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s ease;">
+              🔍 Ver Equipos Especializados
+            </button>
+          </div>
+        </div>
           <div>
             <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; margin-bottom: 20px; text-align: center; height: 230px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08); overflow: hidden;">
               <img src="assets/eq_se1.jpg" alt="Seamaty SE1 & Labnovation LD-560" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px; image-rendering: -webkit-optimize-contrast; image-rendering: high-quality;">
@@ -1956,6 +1991,33 @@
     </div>
   </div>
 
+  <!-- MODAL DEDICADO DE EQUIPOS POR DIVISIÓN -->
+  <div id="equipmentDetailModal" class="modal-overlay">
+    <div class="modal-box" style="max-width: 920px; width: 95%; max-height: 90vh; overflow-y: auto; padding: 28px;">
+      <button class="modal-close-btn" onclick="closeEquipmentModal()">&times;</button>
+      
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; border-bottom: 2px solid #f1f5f9; padding-bottom: 14px;">
+        <div>
+          <span id="eqModalTag" class="division-tag" style="margin-bottom: 4px;">División Analítica</span>
+          <h3 id="eqModalTitle" style="color: #075985; font-size: 1.45rem; font-weight: 800; margin: 0;">Equipos de Hematología</h3>
+        </div>
+        <a id="eqModalDriveBtn" href="https://drive.google.com/drive/folders/1erZuhmSxNFhGBRoUkpTszJ8Z-ALXkN6t?usp=sharing" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; background: #0284c7; color: #ffffff; padding: 10px 18px; border-radius: 6px; font-weight: 700; font-size: 0.88rem; text-decoration: none; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25); transition: all 0.2s ease;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          📁 Ver Fotos en Google Drive
+        </a>
+      </div>
+
+      <p id="eqModalSubtitle" style="color: #64748b; font-size: 0.95rem; margin-bottom: 24px; line-height: 1.5;">
+        Explora la línea completa de equipos y analizadores clínicos disponibles con soporte técnico directo de Mega Lab Panamá.
+      </p>
+
+      <!-- GRID DE EQUIPOS -->
+      <div id="eqModalGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <!-- Inserted dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
   <!-- JAVASCRIPT NATIVO CON DATOS EXTRAÍDOS DEL CATÁLOGO PDF -->
   <script>
     // 1. Selector Multidioma
@@ -2278,6 +2340,146 @@
       const message = `Hola, mi nombre/institución es ${instName} (${phone}). Quisiera solicitar atención técnica sobre: ${interest}`;
       window.open(`https://wa.me/50762762439?text=${encodeURIComponent(message)}`, '_blank');
       toggleModal(false);
+    }
+
+    // 7. MODAL INTERACTIVO DE EQUIPOS POR DIVISIÓN
+    const equipmentData = {
+      hematologia: {
+        tag: "División Analítica",
+        title: "Equipos de Hematología",
+        subtitle: "Analizadores hematológicos automatizados con diferencial de 5 partes y 3 partes con integración completa y alta precisión.",
+        driveLink: "https://drive.google.com/drive/folders/1erZuhmSxNFhGBRoUkpTszJ8Z-ALXkN6t?usp=sharing",
+        items: [
+          {
+            name: "Genrui KT-8000",
+            badge: "Diferencial 5 Partes Automatizado",
+            image: "assets/eq_kt8000.jpg",
+            desc: "Analizador hematológico 100% automatizado de 5 partes con carrusel continuo de muestras, pantalla táctil a color HD y velocidad de procesamiento de hasta 80 muestras/hora.",
+            specs: ["Diferencial 5 Partes + 2 Histogramas", "Sistema Automatizado Walk-Away", "Pantalla Táctil HD a Color"]
+          },
+          {
+            name: "Genrui KT-6600",
+            badge: "Diferencial 5 Partes Compacto",
+            image: "assets/eq_kt6600.jpg",
+            desc: "Analizador de sobremesa de 5 partes con tecnología de dispersión láser tri-angular y micro-volumen de muestra (20 µL).",
+            specs: ["Dispersión Láser Tri-Angular", "60 Muestras por Hora", "Almacenamiento de 60,000 Resultados"]
+          },
+          {
+            name: "Genrui KT-6610",
+            badge: "Diferencial 5 Partes Avanzado",
+            image: "assets/eq_kt6600.jpg",
+            desc: "Sistema hematológico automatizado con impresora térmica integrada, análisis cuantitativo e interfaz táctil interactiva.",
+            specs: ["Impresora Térmica Integrada", "Análisis Cuantitativo de 5 Partes", "Bajo Consumo de Reactivos"]
+          }
+        ]
+      },
+      quimica: {
+        tag: "División Analítica",
+        title: "Equipos de Química Clínica",
+        subtitle: "Sistemas bioquímicos de sobremesa automatizados y semiautomatizados de alta velocidad para laboratorios clínicos.",
+        driveLink: "https://drive.google.com/drive/folders/1erZuhmSxNFhGBRoUkpTszJ8Z-ALXkN6t?usp=sharing",
+        items: [
+          {
+            name: "Genrui WP21A",
+            badge: "Semiautomatizado de Sobre Mesa",
+            image: "assets/eq_wp21a.jpg",
+            desc: "Analizador bioquímico semiautomatizado con incubador incorporado, cubeta de flujo de alta precisión y pantalla gráfica táctil.",
+            specs: ["Rango de onda: 340nm a 630nm", "Incubador Integrado de Muestras", "Impresora Térmica Incorporada"]
+          },
+          {
+            name: "Genrui GS300Plus",
+            badge: "Automatizado de Sobre Mesa",
+            image: "assets/eq_gs300plus.jpg",
+            desc: "Sistema bioquímico automatizado de sobremesa con rendimiento constante de 300 pruebas/hora y lavado de 8 pasos.",
+            specs: ["Hasta 300 Pruebas por Hora", "Lavado Automático de Cubetas", "Refrigeración Continua 24h"]
+          }
+        ]
+      },
+      inmunoensayo: {
+        tag: "División POCT & Nefelometría",
+        title: "Equipos de Inmunoensayo & Nefelometría",
+        subtitle: "Detección cuantitativa por inmunofluorescencia, tira seca y nefelometría específica de proteínas.",
+        driveLink: "https://drive.google.com/drive/folders/1erZuhmSxNFhGBRoUkpTszJ8Z-ALXkN6t?usp=sharing",
+        items: [
+          {
+            name: "Genrui PA50",
+            badge: "Nefelometría (Proteínas Específicas)",
+            image: "assets/eq_pa50.jpg",
+            desc: "Analizador de proteínas específicas por nefelometría cuantitativa para marcadores cardíacos, renales e inflamatorios.",
+            specs: ["Nefelometría Cuantitativa Láser", "Pruebas en 2 a 5 Minutos", "Pantalla Táctil HD"]
+          },
+          {
+            name: "Genrui FA50 / AFR-600",
+            badge: "Inmunoensayo POCT Cuantitativo",
+            image: "assets/eq_fa50.jpg",
+            desc: "Analizador POCT cuantitativo por inmunofluorescencia para pruebas rápidas de laboratorio e intensivos.",
+            specs: ["Inmunofluorescencia Cuantitativa", "Multicanal de Procesamiento", "Conexión LIS/HIS"]
+          }
+        ]
+      },
+      electrolitos: {
+        tag: "División Especializada",
+        title: "Equipos de Gases, Electrolitos & HPLC",
+        subtitle: "Cuidados críticos en minutos y estandarización Gold Standard de HbA1c por HPLC.",
+        driveLink: "https://drive.google.com/drive/folders/1erZuhmSxNFhGBRoUkpTszJ8Z-ALXkN6t?usp=sharing",
+        items: [
+          {
+            name: "Seamaty SE1 / SG1",
+            badge: "Electrolitos & Gases Portátiles",
+            image: "assets/eq_se1.jpg",
+            desc: "Analizadores portátiles POCT de electrolitos y gases arteriales sin mantenimiento para urgencias y cuidados críticos.",
+            specs: ["Resultados en 4 Minutos", "Sin Mantenimiento (Cartucho Seco)", "Formato Portátil Touch"]
+          },
+          {
+            name: "Labnovation LD-560",
+            badge: "HbA1c por HPLC Gold Standard",
+            image: "assets/eq_ld560.jpg",
+            desc: "Sistema automatizado de Cromatografía Líquida de Alta Eficiencia (HPLC) para la medición exacta de HbA1c.",
+            specs: ["Metodología Gold Standard HPLC", "Automatización de Alto Volumen", "Certificación NGSP & IFCC"]
+          }
+        ]
+      }
+    };
+
+    function openEquipmentModal(divisionKey) {
+      const data = equipmentData[divisionKey];
+      if (!data) return;
+
+      document.getElementById('eqModalTag').innerText = data.tag;
+      document.getElementById('eqModalTitle').innerText = data.title;
+      document.getElementById('eqModalSubtitle').innerText = data.subtitle;
+      document.getElementById('eqModalDriveBtn').href = data.driveLink;
+
+      const grid = document.getElementById('eqModalGrid');
+      grid.innerHTML = data.items.map(item => `
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s ease;">
+          <div>
+            <div style="height: 180px; text-align: center; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; background: #f8fafc; border-radius: 8px; padding: 8px; border: 1px solid #edf2f7;">
+              <img src="${item.image}" alt="${item.name}" style="max-width: 100%; max-height: 100%; object-fit: contain; image-rendering: high-quality;">
+            </div>
+            <span style="background: #e0f2fe; color: #0284c7; font-size: 0.72rem; font-weight: 700; padding: 4px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px;">${item.badge}</span>
+            <h4 style="font-size: 1.15rem; color: #0f172a; font-weight: 800; margin-bottom: 6px;">${item.name}</h4>
+            <p style="font-size: 0.85rem; color: #475569; line-height: 1.45; margin-bottom: 12px;">${item.desc}</p>
+            <ul style="list-style: none; padding: 0; margin-bottom: 16px; font-size: 0.78rem; color: #0284c7; font-weight: 600; line-height: 1.5;">
+              ${item.specs.map(spec => `<li>✓ ${spec}</li>`).join('')}
+            </ul>
+          </div>
+          <a href="https://wa.me/50762762439?text=Hola%20Mega%20Lab,%20deseo%20solicitar%20cotizaci%C3%B3n%20y%20ficha%20t%C3%A9cnica%20del%20equipo%20${encodeURIComponent(item.name)}" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 6px; background: #25D366; color: #ffffff; text-decoration: none; padding: 11px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; transition: background 0.2s ease; box-shadow: 0 4px 12px rgba(37,211,102,0.25);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            Cotizar ${item.name} por WhatsApp
+          </a>
+        </div>
+      `).join('');
+
+      const modal = document.getElementById('equipmentDetailModal');
+      modal.style.display = 'flex';
+      modal.classList.add('active');
+    }
+
+    function closeEquipmentModal() {
+      const modal = document.getElementById('equipmentDetailModal');
+      modal.style.display = 'none';
+      modal.classList.remove('active');
     }
 
     function showToast(msg) {
