@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEGA LAB S.A. | Equipos, Insumos y Reactivos Clínicos</title>
+  
+  <!-- Meta Tags SEO & Verificación Empresarial -->
+  <meta name="description" content="Portal institucional oficial de MEGA LAB S.A. Distribución de equipos de diagnóstico analítico, reactivos certificados e insumos clínicos en Panamá.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="MEGA LAB S.A.">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Schema.org JSON-LD para Validación Empresarial -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MEGA LAB",
+    "legalName": "MEGA LAB - Equipos, Insumos y Reactivos Clínicos",
+    "url": "https://www.instagram.com/megalabpa/",
+    "description": "Aliados estratégicos de los laboratorios clínicos, hospitales y centros de salud en Panamá. Distribución de equipos de diagnóstico analítico, reactivos certificados y kits de pruebas rápidas.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ciudad de Panamá",
+      "addressCountry": "PA"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+507-6276-2439",
+        "contactType": "customer support",
+        "email": "admin@megalabpa.com",
+        "availableLanguage": ["Spanish", "English"]
+      }
+    ]
+  </script>
+
+  <!-- Google Fonts para Tipografía de Marcas (Outfit & Montserrat) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       VARIABLES Y PALETA DE COLORES AZUL CIELO CLARO (PAZ, SEGURIDAD Y CONFIANZA)
+       ========================================================================== */
+    :root {
+      --primary-blue: #0284c7;
+      --deep-blue: #e0f2fe;
+      --cyan-gradient: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      --bg-gradient-hero: linear-gradient(180deg, #cbe5f6 0%, #e0f2fe 100%);
+      --bg-surface: #e0f2fe;
+      --bg-card: #ffffff;
+      --accent-cyan: #0284c7;
+      --text-white: #075985;
+      --text-muted: #475569;
+      --border-color: #bae6fd;
+      --font-stack: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      --header-height: 80px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-stack);
+      background-color: #e0f2fe;
+      color: #075985;
+      line-height: 1.6;
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: #e0f2fe;
+      color: #075985;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-padding {
+      padding: 80px 0;
+    }
+
+    /* ==========================================================================
+       HEADER FIJO Y NAVEGACIÓN (AZUL CIELO CLARO - PAZ Y SEGURIDAD)
+       ========================================================================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--header-height);
+      background-color: rgba(224, 242, 254, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #bae6fd;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 18px rgba(2, 132, 199, 0.08);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.3rem;
+      letter-spacing: 0.5px;
+      color: #075985;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #334155;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-blue);
+    }
+
+    .lang-selector {
+      display: flex;
+      align-items: center;
+      background: #bae6fd;
+      border: 1px solid #7dd3fc;
+      border-radius: 4px;
+      padding: 4px 8px;
+      gap: 4px;
+    }
+
+    .lang-btn {
+      background: none;
+      border: none;
+      color: #0369a1;
+      cursor: pointer;
+      padding: 2px 8px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      border-radius: 3px;
+    }
+
+    .lang-btn.active {
+      background-color: var(--primary-blue);
+      color: #fff;
+    }
+
+    /* ==========================================================================
+       HERO BANNER SLIDER
+       ========================================================================== */
+    .hero-slider-wrapper {
+      padding-top: calc(var(--header-height) + 24px);
+      padding-bottom: 24px;
+      position: relative;
+      background: #d4ebf9;
+    }
+
+    .tuves-slider-frame {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+      background: #001838;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      width: 100%;
+      aspect-ratio: 2 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slides-track {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #001838;
+    }
+
+    .slide-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .slide:hover .slide-img {
+      transform: scale(1.008);
+    }
+
+    .slider-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      background: rgba(10, 25, 47, 0.75);
+      border: 1px solid var(--border-color);
+      color: var(--text-white);
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: all 0.25s ease;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .slider-arrow:hover {
+      background: var(--accent-cyan);
+      color: #0a192f;
+      transform: translateY(-50%) scale(1.1);
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+    }
+
+    .slider-arrow.prev { left: 20px; }
+    .slider-arrow.next { right: 20px; }
+
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.3);
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .dot.active {
+      background-color: var(--accent-cyan);
+      width: 36px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px var(--accent-cyan);
+    }
+
+    /* ==========================================================================
+       FRANJA DE PILARES OPERATIVOS (EXTRAÍDOS EXACTOS DEL PDF)
+       ========================================================================== */
+    .trust-ticker-bar {
+      background: #d4ebf9;
+      border-top: 1px solid #bae6fd;
+      border-bottom: 1px solid #bae6fd;
+      padding: 24px 0;
+      margin-top: 24px;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.05);
+    }
+
+    .ticker-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .ticker-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 550px) {
+      .ticker-grid { grid-template-columns: 1fr; }
+    }
+
+    .ticker-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: #ffffff;
+      border: 1px solid #bae6fd;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .ticker-icon {
+      color: var(--primary-blue);
+      font-size: 1.2rem;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    .ticker-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #075985;
+      margin-bottom: 2px;
+    }
+
+    .ticker-desc {
+      font-size: 0.78rem;
+      color: #475569;
+      line-height: 1.3;
+    }
+
+    /* ==========================================================================
+       NOSOTROS / ABOUT US
+       ========================================================================== */
+    .section-tag {
+      color: var(--primary-blue);
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #075985;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .text-block {
+      color: #334155;
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .notice-card {
+      background-color: #ffffff;
+      border: 1px solid #bae6fd;
+      border-left: 4px solid var(--primary-blue);
+      padding: 24px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 20px;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.06);
+    }
+
+    /* ==========================================================================
+       SECCIÓN DE EQUIPOS
+       ========================================================================== */
+    .division-header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #bae6fd;
+      border: 1px solid #7dd3fc;
+      padding: 6px 14px;
+      border-radius: 20px;
+      color: #0369a1;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 14px;
+    }
+
+    .divisions-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 1100px) {
+      .divisions-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 650px) {
+      .divisions-grid { grid-template-columns: 1fr; }
+    }
+
+    .division-block {
+      background: #ffffff;
+      border: 1px solid #bae6fd;
+      border-radius: 12px;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 4px 20px rgba(2, 132, 199, 0.06);
+    }
+
+    .division-block:hover {
+      border-color: var(--primary-blue);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(2, 132, 199, 0.18);
+    }
+
+    .division-header {
+      border-bottom: 1px solid #bae6fd;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+      min-height: 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .division-tag {
+      color: var(--primary-blue);
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .division-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #075985;
+      margin-top: 4px;
+      line-height: 1.25;
+    }
+
+    .division-block p {
+      min-height: 85px;
+      font-size: 0.85rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .division-features-list {
+      list-style: none;
+      margin: 14px 0 20px 0;
+      min-height: 175px;
+    }
+
+    .division-features-list li {
+      font-size: 0.82rem;
+      color: #334155;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.35;
+    }
+
+    .division-features-list li::before {
+      content: "✓";
+      color: var(--primary-blue);
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .brand-chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      min-height: 52px;
+      align-content: flex-end;
+    }
+
+    .brand-chip {
+      background: #e0f2fe;
+      border: 1px solid #bae6fd;
+      color: #0284c7;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .institutional-cta-banner {
+      background: linear-gradient(135deg, #075985 0%, #0369a1 100%);
+      border: 1px solid #38bdf8;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      box-shadow: 0 10px 30px rgba(2, 132, 199, 0.2);
+    }
+
+    .btn-institutional-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--cyan-gradient);
+      color: #ffffff;
+      font-weight: 800;
+      padding: 14px 26px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 20px rgba(2, 132, 199, 0.35);
+    }
+
+    .btn-institutional-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(2, 132, 199, 0.5);
+    }
+
+    /* ==========================================================================
+       CATÁLOGO DE REACTIVOS E INSUMOS
+       ========================================================================== */
+    .reagents-layout {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 28px;
+      margin-top: 28px;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .reagents-layout { grid-template-columns: 1fr; }
+    }
+
+    .reagents-sidebar {
+      background: #ffffff;
+      border: 1px solid #bae6fd;
+      border-radius: 12px;
+      padding: 18px;
+      height: fit-content;
+      position: sticky;
+      top: calc(var(--header-height) + 20px);
+      align-self: start;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.05);
+    }
+
+    .reagents-nav-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary-blue);
+      padding: 8px 10px 14px 10px;
+      border-bottom: 1px solid #bae6fd;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .reagent-cat-btn {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      border: 1px solid transparent;
+      color: #475569;
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .reagent-cat-btn:hover {
+      background: #e0f2fe;
+      color: #075985;
+    }
+
+    .reagent-cat-btn.active {
+      background: #bae6fd;
+      border-color: #38bdf8;
+      color: #0369a1;
+      font-weight: 700;
+    }
+
+    .cat-count-badge {
+      font-size: 0.75rem;
+      background: #e0f2fe;
+      padding: 2px 8px;
+      border-radius: 12px;
+      color: #0369a1;
+    }
+
+    .reagent-cat-btn.active .cat-count-badge {
+      background: var(--primary-blue);
+      color: #ffffff;
+      font-weight: 800;
+    }
+
+    .reagents-main-panel {
+      background: #ffffff;
+      border: 1px solid #bae6fd;
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(2, 132, 199, 0.06);
+    }
+
+    .panel-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+      border-bottom: 1px solid #bae6fd;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .panel-brand-tag {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #0369a1;
+      background: #e0f2fe;
+      border: 1px solid #7dd3fc;
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 6px;
+    }
+
+    .search-reagents-box {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .search-reagents-input {
+      width: 100%;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 8px;
+      padding: 12px 20px 12px 44px;
+      color: #075985;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .search-reagents-input:focus {
+      border-color: var(--primary-blue);
+      box-shadow: 0 0 12px rgba(2, 132, 199, 0.2);
+    }
+
+    .search-icon-svg {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--primary-blue);
+      pointer-events: none;
+    }
+
+    .reagents-grid-professional {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 12px;
+    }
+
+    .reagent-item-card {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 8px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .reagent-item-card:hover {
+      border-color: var(--primary-blue);
+      background: #e0f2fe;
+      transform: translateY(-2px);
+    }
+
+    .reagent-name {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #075985;
+      margin-bottom: 4px;
+    }
+
+    .reagent-meta {
+      font-size: 0.74rem;
+      color: #475569;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .reagent-meta-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary-blue);
+      box-shadow: 0 0 6px var(--primary-blue);
+    }
+
+    /* ==========================================================================
+       MARCAS ALIADAS Y REPRESENTADAS (DISEÑO INNOVADOR Y ELEGANTE)
+       ========================================================================== */
+    .brands-section {
+      background: linear-gradient(180deg, #d4ebf9 0%, #e0f2fe 100%);
+      border-top: 1px solid #bae6fd;
+      border-bottom: 1px solid #bae6fd;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brands-grid-official {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px;
+      margin-top: 42px;
+    }
+
+    .brand-official-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(186, 230, 253, 0.9);
+      border-radius: 20px;
+      padding: 34px 24px 28px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 160px;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 8px 25px rgba(2, 132, 199, 0.06);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Brillo metalizado diagonal al pasar el cursor */
+    .brand-official-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -150%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.75), transparent);
+      transform: skewX(-25deg);
+      transition: left 0.75s ease;
+    }
+
+    .brand-official-card:hover::before {
+      left: 150%;
+    }
+
+    .brand-official-card:hover {
+      background: #ffffff;
+      border-color: var(--primary-blue);
+      box-shadow: 0 14px 35px rgba(2, 132, 199, 0.2);
+      transform: translateY(-8px);
+    }
+
+    /* Etiqueta numérica elegante */
+    .brand-number-tag {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #0284c7;
+      background: rgba(224, 242, 254, 0.85);
+      padding: 2px 10px;
+      border-radius: 12px;
+      letter-spacing: 1px;
+      font-family: monospace;
+    }
+
+    .brand-typography-name {
+      font-family: 'Outfit', 'Montserrat', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 900;
+      letter-spacing: 1.6px;
+      color: #075985;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      line-height: 1.25;
+      transition: all 0.3s ease;
+    }
+
+    .brand-official-card:hover .brand-typography-name {
+      color: #0284c7;
+      transform: scale(1.04);
+    }
+
+    .brand-pill-category {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: #475569;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .brand-official-card:hover .brand-pill-category {
+      background: #e0f2fe;
+      color: #0369a1;
+      border-color: #bae6fd;
+    }
+
+    /* Acentos cromáticos por marca */
+    .brand-card-genrui { border-bottom: 4px solid #10b981; }
+    .brand-card-cypress { border-bottom: 4px solid #0284c7; }
+    .brand-card-labnovation { border-bottom: 4px solid #8b5cf6; }
+    .brand-card-seamaty { border-bottom: 4px solid #06b6d4; }
+    .brand-card-alltest { border-bottom: 4px solid #f59e0b; }
+
+    /* ==========================================================================
+       CONTACTO DIRECTO Y PIE DE PÁGINA
+       ========================================================================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+      margin-top: 36px;
+    }
+
+    .contact-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 32px;
+      border-radius: 8px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .contact-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-icon {
+      color: var(--accent-cyan);
+      margin-top: 2px;
+    }
+
+    footer {
+      background-color: #050c17;
+      border-top: 1px solid var(--border-color);
+      padding: 28px 0 18px 0;
+      font-size: 0.84rem;
+      color: #94a3b8;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+
+    .footer-grid h4 {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .footer-grid a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-grid a:hover {
+      color: #38bdf8;
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: #64748b;
+      font-size: 0.8rem;
+    }
+
+    /* MODAL DE SOLICITUD INSTITUCIONAL */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-box {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      max-width: 540px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+      position: relative;
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      background: none;
+      border: none;
+      color: #64748b;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .modal-form-group {
+      margin-bottom: 16px;
+    }
+
+    .modal-label {
+      display: block;
+      font-size: 0.82rem;
+      color: #475569;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .modal-input {
+      width: 100%;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 10px 14px;
+      color: #0f172a;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .modal-input:focus {
+      border-color: var(--primary-blue);
+    }
+
+    /* ANIMACIONES */
+    .fade-up {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    /* ==========================================================================
+       MEDIA QUERIES COMPRENSIVAS PARA ADAPTABILIDAD 100% RESPONSIVA (MÓVIL / TABLET / PC)
+       ========================================================================== */
+
+    /* PANTALLAS MEDIANAS Y TABLETS (Hasta 1024px) */
+    @media (max-width: 1024px) {
+      .divisions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .reagents-layout {
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .reagents-sidebar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 12px;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .reagents-nav-title {
+        display: none;
+      }
+
+      .reagent-cat-btn {
+        white-space: nowrap;
+        flex-shrink: 0;
+        padding: 10px 18px;
+        border-radius: 25px;
+      }
+
+      .brands-grid-official {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero-slider-wrapper {
+        padding-top: calc(var(--header-height) + 14px);
+        padding-bottom: 20px;
+      }
+      .tuves-slider-frame {
+        border-radius: 12px;
+        aspect-ratio: 2 / 1;
+      }
+      .about-grid { grid-template-columns: 1fr; }
+      .nav-menu { display: none; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .slider-arrow { width: 36px; height: 36px; font-size: 0.9rem; }
+      .slider-arrow.prev { left: 10px; }
+      .slider-arrow.next { right: 10px; }
+    }
+
+    /* PANTALLAS DE CELULAR (Hasta 768px) */
+    @media (max-width: 768px) {
+      :root {
+        --header-height: 70px;
+      }
+
+      body {
+        font-size: 0.95rem;
+      }
+
+      .section-title {
+        font-size: 1.65rem !important;
+      }
+
+      .section-padding {
+        padding: 45px 0;
+      }
+
+      .divisions-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .division-block {
+        padding: 24px 20px;
+      }
+
+      .brands-grid-official {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .brand-official-card {
+        padding: 24px 16px 20px 16px;
+        min-height: 140px;
+      }
+
+      .brand-typography-name {
+        font-size: 1.05rem;
+        letter-spacing: 1px;
+      }
+
+      .brand-pill-category {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .search-reagents-input {
+        font-size: 16px !important; /* Previene zoom automático en iOS Safari */
+        padding: 12px 14px 12px 42px;
+      }
+
+      .panel-top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .reagents-grid-professional {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+      }
+    }
+
+    /* PANTALLAS DE CELULAR PEQUEÑAS (Hasta 480px) */
+    @media (max-width: 480px) {
+      .brands-grid-official {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .brand-number-tag {
+        font-size: 0.7rem;
+        right: 12px;
+        top: 10px;
+      }
+
+      .brand-typography-name {
+        font-size: 1.15rem;
+      }
+
+      .modal-box {
+        padding: 24px 18px;
+        margin: 10px;
+      }
+
+      .institutional-cta-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 24px 18px;
+      }
+
+      .btn-institutional-primary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER NAVEGACIONAL FIJO CON SELECTOR DE IDIOMA -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#inicio" class="brand-logo" style="display: flex; align-items: center; text-decoration: none;">
+        <img src="assets/logo-oficial.png" alt="MEGA LAB Logo" style="height: 46px; width: auto; display: block; filter: drop-shadow(0 2px 8px rgba(0, 229, 255, 0.25));">
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link active" data-es="Inicio" data-en="Home">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
+          <li><a href="#equipos" class="nav-link" data-es="Equipos Clínicos" data-en="Clinical Equipment">Equipos Clínicos</a></li>
+          <li><a href="#reactivos" class="nav-link" data-es="Reactivos e Insumos" data-en="Reagents & Supplies">Reactivos e Insumos</a></li>
+          <li><a href="#marcas" class="nav-link" data-es="Marcas" data-en="Brands">Marcas</a></li>
+          <li><a href="#contacto" class="nav-link" data-es="Canales de Atención" data-en="Corporate Support">Canales de Atención</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-selector">
+        <button class="lang-btn active" id="btn-es" onclick="switchLanguage('es')">ES</button>
+        <span style="color: var(--border-color);">|</span>
+        <button class="lang-btn" id="btn-en" onclick="switchLanguage('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER BANNER -->
+  <section id="inicio" class="hero-slider-wrapper">
+    <div class="container">
+      <div class="tuves-slider-frame" id="sliderFrame">
+        
+        <button class="slider-arrow prev" onclick="moveSlide(-1)" aria-label="Slide anterior">&#10094;</button>
+        <button class="slider-arrow next" onclick="moveSlide(1)" aria-label="Siguiente slide">&#10095;</button>
+
+        <div class="slides-track" id="slidesTrack">
+          <div class="slide">
+            <a href="#reactivos" class="slide-link" title="Ver reactivos e insumos MEGA LAB">
+              <img src="assets/banner-1.png" alt="MEGA LAB - Stock Constante, Un Solo Proveedor, Logística Eficiente y Respaldo Técnico" class="slide-img" fetchpriority="high" />
+            </a>
+          </div>
+          <div class="slide">
+            <a href="#contacto" class="slide-link" title="Ver cobertura de logística a toda Panamá">
+              <img src="assets/banner-2.png" alt="MEGA LAB - Envíos a Toda Panamá" class="slide-img" loading="lazy" />
+            </a>
+          </div>
+          <div class="slide">
+            <a href="#equipos" class="slide-link" title="Ver soluciones de automatización médica">
+              <img src="assets/banner-3.png" alt="MEGA LAB - Automatiza tu laboratorio" class="slide-img" loading="lazy" />
+            </a>
+          </div>
+          <div class="slide">
+            <a href="#contacto" class="slide-link" title="Canales de atención y procuraduría MEGA LAB">
+              <img src="assets/banner-4.png" alt="MEGA LAB - En cada resultado de laboratorio estamos nosotros" class="slide-img" loading="lazy" />
+            </a>
+          </div>
+          <div class="slide">
+            <a href="#reactivos" class="slide-link" title="Consultar reactivos clínicos certificados">
+              <img src="assets/banner-5.png" alt="MEGA LAB - Tu laboratorio no se detiene, Reactivos Certificados" class="slide-img" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-dots" id="sliderDots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRANJA DE PILARES OPERATIVOS OFICIALES DE MEGALAB (PÁG. 2 PDF) -->
+  <div class="trust-ticker-bar">
+    <div class="container">
+      <div class="ticker-grid">
+        <div class="ticker-item">
+          <div class="ticker-icon">✓</div>
+          <div>
+            <div class="ticker-title" data-es="Stock Constante" data-en="Constant Stock">Stock Constante</div>
+            <div class="ticker-desc" data-es="Evitamos que te quedes sin mercancía." data-en="We prevent you from running out of supplies.">Evitamos que te quedes sin mercancía.</div>
+          </div>
+        </div>
+
+        <div class="ticker-item">
+          <div class="ticker-icon">✓</div>
+          <div>
+            <div class="ticker-title" data-es="Un Solo Proveedor" data-en="Single Supplier">Un Solo Proveedor</div>
+            <div class="ticker-desc" data-es="Equipos, insumos y reactivos en un solo lugar." data-en="Equipment, supplies and reagents in one place.">Equipos, insumos y reactivos en un solo lugar.</div>
+          </div>
+        </div>
+
+        <div class="ticker-item">
+          <div class="ticker-icon">✓</div>
+          <div>
+            <div class="ticker-title" data-es="Logística Eficiente" data-en="Efficient Logistics">Logística Eficiente</div>
+            <div class="ticker-desc" data-es="Entrega oportuna para que no te detengas." data-en="Timely delivery so your lab keeps running.">Entrega oportuna para que no te detengas.</div>
+          </div>
+        </div>
+
+        <div class="ticker-item">
+          <div class="ticker-icon">✓</div>
+          <div>
+            <div class="ticker-title" data-es="Respaldo Técnico" data-en="Technical Backup">Respaldo Técnico</div>
+            <div class="ticker-desc" data-es="Acompañamiento real antes y después de compra." data-en="Real support before and after purchase.">Acompañamiento real antes y después de compra.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOSOTROS / ABOUT US -->
+  <section id="nosotros" class="section-padding">
+    <div class="container about-grid fade-up">
+      <div>
+        <span class="section-tag" data-es="Compromiso, Precisión y Respaldo Continuo" data-en="Commitment, Precision & Continuous Support">Compromiso, Precisión y Respaldo Continuo</span>
+        <h2 class="section-title" data-es="Aliados Estratégicos del Sector Diagnóstico en Panamá" data-en="Strategic Partners for Clinical Diagnostics in Panama">
+          Aliados Estratégicos del Sector Diagnóstico en Panamá
+        </h2>
+        <p class="text-block" style="font-size: 1.05rem; line-height: 1.7; color: #475569;" data-es="Somos aliados estratégicos de los laboratorios clínicos, hospitales y centros de salud en Panamá. Nos dedicamos a la distribución de equipos de diagnóstico analítico de última generación, reactivos certificados y kits de pruebas rápidas de alta rotación." data-en="We are strategic partners for clinical laboratories, hospitals, and healthcare centers in Panama. Dedicated to distributing state-of-the-art diagnostic equipment, certified reagents, and fast-turnaround rapid test kits.">
+          Somos aliados estratégicos de los laboratorios clínicos, hospitales y centros de salud en Panamá. Nos dedicamos a la distribución de equipos de diagnóstico analítico de última generación, reactivos certificados y kits de pruebas rápidas de alta rotación.
+        </p>
+      </div>
+
+      <div class="notice-card" style="border-left-color: var(--primary-blue);">
+        <h3 style="font-size: 1.15rem; color: var(--primary-blue); margin-bottom: 12px;" data-es="Nuestro Compromiso Operativo" data-en="Our Operational Commitment">Nuestro Compromiso Operativo</h3>
+        <p style="font-size: 0.95rem; color: #475569; line-height: 1.6;" data-es="Nuestro compromiso va más allá de la venta de insumos: garantizamos continuidad operativa, suministro constante de stock y asistencia técnica especializada para que tu laboratorio nunca detenga su flujo de trabajo." data-en="Our commitment goes beyond selling supplies: we guarantee operational continuity, constant stock supply, and specialized technical assistance so your laboratory never stops its workflow.">
+          Nuestro compromiso va más allá de la venta de insumos: garantizamos continuidad operativa, suministro constante de stock y asistencia técnica especializada para que tu laboratorio nunca detenga su flujo de trabajo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE EQUIPOS (4 DIVISIONES EN 1 SOLA FILA TOTALMENTE NIVELEADAS) -->
+  <section id="equipos" class="section-padding" style="background-color: var(--bg-surface);">
+    <div class="container fade-up">
+      
+      <!-- Encabezado -->
+      <div style="max-width: 800px; margin-bottom: 40px;">
+        <span class="division-header-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Sistemas de Automatización y Diagnóstico Analítico
+        </span>
+        <h2 class="section-title" data-es="Equipos y Analizadores Clínicos" data-en="Analytical Equipment & Analyzers">
+          Equipos y Analizadores Clínicos
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;" data-es="Tecnología de vanguardia para la automatización, rapidez y precisión en el procesamiento de muestras para laboratorios e instituciones de salud:" data-en="Cutting-edge technology for automation, speed, and precision in sample processing for laboratories and healthcare institutions:">
+          Tecnología de vanguardia para la automatización, rapidez y precisión en el procesamiento de muestras para laboratorios e instituciones de salud:
+        </p>
+      </div>
+
+      <!-- GRID DE 4 CUADROS ALINEADOS EN UNA FILA -->
+      <div class="divisions-grid">
+        
+        <!-- 1. HEMATOLOGÍA -->
+        <div class="division-block">
+          <div>
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; margin-bottom: 20px; text-align: center; height: 230px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08); overflow: hidden;">
+              <img src="assets/eq_kt6600.jpg" alt="Genrui KT-6600 Analizador Hematológico" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px;">
+            </div>
+            <div class="division-header">
+              <span class="division-tag" data-es="División Analítica" data-en="Analytical Division">División Analítica</span>
+              <h3 class="division-title" data-es="Hematología" data-en="Hematology">Hematología</h3>
+            </div>
+            <p data-es="Analizadores hematológicos automatizados con diferencial de 5 partes e integración completa." data-en="Automated hematology analyzers with 5-part differential and full integration.">
+              Analizadores hematológicos automatizados con diferencial de 5 partes e integración completa.
+            </p>
+            <ul class="division-features-list">
+              <li data-es="Genrui KT-6600 / KT-6610: Diferencial 5 partes para clínicas pequeñas y medianas." data-en="Genrui KT-6600 / KT-6610: 5-part differential for small and medium clinics.">Genrui KT-6600 / KT-6610: Diferencial 5 partes para clínicas pequeñas y medianas.</li>
+              <li data-es="Genrui KT-8000: Totalmente automatizado para liberar manos y prolongar recorrido." data-en="Genrui KT-8000: Fully automated to free up hands and extend walkaway time.">Genrui KT-8000: Totalmente automatizado para liberar manos y prolongar recorrido.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="brand-chips">
+              <span class="brand-chip">Genrui Biotech</span>
+              <span class="brand-chip">Diferencial 5 Partes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. QUÍMICA CLÍNICA -->
+        <div class="division-block">
+          <div>
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; margin-bottom: 20px; text-align: center; height: 230px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08); overflow: hidden;">
+              <img src="assets/eq_gs300plus.jpg" alt="Genrui GS300Plus Analizador Bioquímico" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px;">
+            </div>
+            <div class="division-header">
+              <span class="division-tag" data-es="División Analítica" data-en="Analytical Division">División Analítica</span>
+              <h3 class="division-title" data-es="Química Clínica" data-en="Clinical Chemistry">Química Clínica</h3>
+            </div>
+            <p data-es="Sistemas bioquímicos de sobremesa automatizados y semiautomatizados de alta velocidad." data-en="Automated and semi-automated benchtop biochemical systems with high throughput.">
+              Sistemas bioquímicos de sobremesa automatizados y semiautomatizados de alta velocidad.
+            </p>
+            <ul class="division-features-list">
+              <li data-es="Genrui GS300Plus: Multifuncional de sobremesa hasta 300 pruebas/hora." data-en="Genrui GS300Plus: Benchtop multifunctional up to 300 tests/hour.">Genrui GS300Plus: Multifuncional de sobremesa hasta 300 pruebas/hora.</li>
+              <li data-es="Genrui GS100 / Awp21A: Soluciones compactas para bajo y mediano volumen." data-en="Genrui GS100 / Awp21A: Compact solutions for low and medium sample volume.">Genrui GS100 / Awp21A: Soluciones compactas para bajo y mediano volumen.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="brand-chips">
+              <span class="brand-chip">Genrui Biotech</span>
+              <span class="brand-chip">Hasta 300 t/h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. INMUNOENSAYO & NEFELOMETRÍA -->
+        <div class="division-block">
+          <div>
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; margin-bottom: 20px; text-align: center; height: 230px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08); overflow: hidden;">
+              <img src="assets/eq_fa50.jpg" alt="Genrui FA50 Analizador Inmunoensayo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px;">
+            </div>
+            <div class="division-header">
+              <span class="division-tag" data-es="División POCT & Nefelometría" data-en="POCT & Nephelometry Division">División POCT & Nefelometría</span>
+              <h3 class="division-title" data-es="Inmunoensayo & Nefelometría" data-en="Immunoassay & Nephelometry">Inmunoensayo & Nefelometría</h3>
+            </div>
+            <p data-es="Detección cuantitativa por inmunofluorescencia, tira seca y nefelometría específica de proteínas." data-en="Quantitative detection by immunofluorescence, dry strip, and specific protein nephelometry.">
+              Detección cuantitativa por inmunofluorescencia, tira seca y nefelometría específica de proteínas.
+            </p>
+            <ul class="division-features-list">
+              <li data-es="Inmunoensayo (FA50 & AFR-600): Detección cuantitativa por inmunofluorescencia y tira seca." data-en="Immunoassay (FA50 & AFR-600): Quantitative immunofluorescence and dry strip detection.">Inmunoensayo (FA50 & AFR-600): Detección cuantitativa por inmunofluorescencia y tira seca.</li>
+              <li data-es="Nefelometría (Genrui PA50): Analizador de proteínas específicas compacto y práctico." data-en="Nephelometry (Genrui PA50): Compact and practical specific protein analyzer.">Nefelometría (Genrui PA50): Analizador de proteínas específicas compacto y práctico.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="brand-chips">
+              <span class="brand-chip">FA50 & AFR-600</span>
+              <span class="brand-chip">PA50 Nefelometría</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. ELECTROLITOS, GASES & HPLC -->
+        <div class="division-block">
+          <div>
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; margin-bottom: 20px; text-align: center; height: 230px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08); overflow: hidden;">
+              <img src="assets/eq_se1.jpg" alt="Seamaty SE1 & Labnovation LD-560" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px;">
+            </div>
+            <div class="division-header">
+              <span class="division-tag" data-es="División Especializada" data-en="Specialized Division">División Especializada</span>
+              <h3 class="division-title" data-es="Gases, Electrolitos & HPLC" data-en="Gases, Electrolytes & HPLC">Gases, Electrolitos & HPLC</h3>
+            </div>
+            <p data-es="Cuidados críticos en minutos y estandarización Gold Standard de HbA1c por HPLC." data-en="Critical care in minutes and Gold Standard HbA1c standardization via HPLC.">
+              Cuidados críticos en minutos y estandarización Gold Standard de HbA1c por HPLC.
+            </p>
+            <ul class="division-features-list">
+              <li data-es="Seamaty SE1 / SG1: Electrolitos portátiles y gases arteriales de alta precisión." data-en="Seamaty SE1 / SG1: Portable electrolytes and blood gases with high precision.">Seamaty SE1 / SG1: Electrolitos portátiles y gases arteriales de alta precisión.</li>
+              <li data-es="Labnovation LD-560: Medición de HbA1c por Cromatografía Líquida (HPLC)." data-en="Labnovation LD-560: HbA1c measurement by Liquid Chromatography (HPLC).">Labnovation LD-560: Medición de HbA1c por Cromatografía Líquida (HPLC).</li>
+            </ul>
+          </div>
+          <div>
+            <div class="brand-chips">
+              <span class="brand-chip">Seamaty</span>
+              <span class="brand-chip">Labnovation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner de Contacto Institucional -->
+      <div class="institutional-cta-banner">
+        <div>
+          <h3 style="font-size: 1.4rem; color: #ffffff; margin-bottom: 8px; font-weight: 800;" data-es="¿Necesitas equipar o modernizar tu laboratorio clínico?" data-en="Do you need to equip or modernize your clinical laboratory?">¿Necesitas equipar o modernizar tu laboratorio clínico?</h3>
+          <p style="color: #e0f2fe; font-size: 0.98rem; max-width: 650px; line-height: 1.5; font-weight: 500;" data-es="Coordinamos visitas técnicas, evaluaciones de volumen analítico y planes adaptados a las necesidades de tu laboratorio." data-en="We coordinate technical visits, analytical volume assessments, and plans tailored to your lab needs.">
+            Coordinamos visitas técnicas, evaluaciones de volumen analítico y planes adaptados a las necesidades de tu laboratorio.
+          </p>
+        </div>
+        <button onclick="toggleModal(true)" class="btn-institutional-primary" data-es="Solicitar Asesoría Técnica Institucional" data-en="Request Technical Institutional Advisory">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Solicitar Asesoría Técnica
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CATÁLOGO DE REACTIVOS E INSUMOS POR ESPECIALIDAD (DATOS EXACTOS DEL PDF) -->
+  <section id="reactivos" class="section-padding">
+    <div class="container fade-up">
+      <span class="section-tag" data-es="Catálogo General de Consumibles" data-en="General Consumables Catalog">Catálogo General de Consumibles</span>
+      <h2 class="section-title" data-es="Reactivos, Pruebas e Insumos Clínicos" data-en="Reagents, Tests & Clinical Disposables">Reactivos, Pruebas e Insumos Clínicos</h2>
+      <p style="color: var(--text-muted); max-width: 780px;" data-es="Selecciona la línea de interés o ingresa el nombre de la prueba o reactivo en el buscador para consultar la oferta oficial de Mega Lab:" data-en="Select the line of interest or type the test/reagent name in the search bar to consult Mega Lab's official portfolio:">
+        Selecciona la línea de interés o ingresa el nombre de la prueba o reactivo en el buscador para consultar la oferta oficial de Mega Lab:
+      </p>
+
+      <div class="reagents-layout">
+        
+        <!-- Sidebar por Línea del PDF -->
+        <div class="reagents-sidebar">
+          <div class="reagents-nav-title">
+            <span>Líneas del Catálogo</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          
+          <button class="reagent-cat-btn active" data-cat="quimica" onclick="selectCategory('quimica')">
+            <span>Química Clínica</span>
+            <span class="cat-count-badge">29</span>
+          </button>
+
+          <button class="reagent-cat-btn" data-cat="hematologia" onclick="selectCategory('hematologia')">
+            <span>Hematología</span>
+            <span class="cat-count-badge">12</span>
+          </button>
+
+          <button class="reagent-cat-btn" data-cat="pa50" onclick="selectCategory('pa50')">
+            <span>Nefelometría (PA50)</span>
+            <span class="cat-count-badge">14</span>
+          </button>
+
+          <button class="reagent-cat-btn" data-cat="fa50" onclick="selectCategory('fa50')">
+            <span>Inmunoensayo (FA50 & AFR-600)</span>
+            <span class="cat-count-badge">44</span>
+          </button>
+
+          <button class="reagent-cat-btn" data-cat="electrolitos" onclick="selectCategory('electrolitos')">
+            <span>Electrolitos & Gases</span>
+            <span class="cat-count-badge">7</span>
+          </button>
+
+          <button class="reagent-cat-btn" data-cat="hplc" onclick="selectCategory('hplc')">
+            <span>HPLC (LD-560)</span>
+            <span class="cat-count-badge">9</span>
+          </button>
+
+          <button class="reagent-cat-btn" data-cat="latex" onclick="selectCategory('latex')">
+            <span>Aglutinación en Látex</span>
+            <span class="cat-count-badge">8</span>
+          </button>
+
+          <button class="reagent-cat-btn" data-cat="rapidas" onclick="selectCategory('rapidas')">
+            <span>Pruebas Rápidas</span>
+            <span class="cat-count-badge">33</span>
+          </button>
+
+          <button class="reagent-cat-btn" data-cat="insumos" onclick="selectCategory('insumos')">
+            <span>Instrumentos & Insumos</span>
+            <span class="cat-count-badge">20</span>
+          </button>
+
+          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px dashed #bae6fd; text-align: center;">
+            <span style="font-size: 0.78rem; font-weight: 800; color: #0369a1; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 6px;">
+              ¿Buscas otra prueba?
+            </span>
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 12px; line-height: 1.4;">
+              Consultas y cotizaciones personalizadas en Panamá:
+            </p>
+            <a href="https://wa.me/50762762439?text=Hola,%20busco%20un%20reactivo%20o%20prueba%20espec%C3%ADfica" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; background: #25D366; color: #ffffff; font-size: 0.82rem; font-weight: 800; padding: 10px 14px; border-radius: 8px; text-decoration: none; width: 100%; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25); transition: transform 0.2s ease;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.893 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.149 4.197 4.192-1.098z"/></svg>
+              <span>Consultar en WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Panel Principal -->
+        <div class="reagents-main-panel">
+          
+          <div class="search-reagents-box">
+            <svg class="search-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="reagentSearchInput" class="search-reagents-input" placeholder="Buscar reactivo o prueba (ej. Glucosa, Troponina, Ferritina, ASO, Creatinina)..." oninput="searchItems(this.value)">
+          </div>
+
+          <div class="panel-top-bar">
+            <div>
+              <h3 id="catPanelTitle" style="font-size: 1.35rem; color: #fff; margin-bottom: 2px;">Reactivos de Química</h3>
+              <span id="catPanelBrand" class="panel-brand-tag">Proveedor Oficial: Cypress Diagnostics</span>
+            </div>
+            <a id="catPanelWaLink" href="https://wa.me/50762762439?text=Hola,%20solicito%20la%20lista%20de%20precios%20de%20Reactivos" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 229, 255, 0.1); border: 1px solid var(--accent-cyan); color: var(--accent-cyan); font-weight: 700; padding: 9px 16px; border-radius: 6px; font-size: 0.85rem; text-decoration: none; transition: all 0.2s ease;">
+              <span>Consultar Disponibilidad en WhatsApp</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <p id="catPanelDesc" style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px;">
+            Kits de reactivos con máxima precisión y respaldo de control de calidad.
+          </p>
+
+          <div id="catPanelGrid" class="reagents-grid-professional">
+            <!-- Carga por JavaScript -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MARCAS OFICIALES REPRESENTADAS -->
+  <section id="marcas" class="section-padding brands-section">
+    <div class="container fade-up" style="text-align: center;">
+      <span class="section-tag" data-es="Respaldo Internacional" data-en="International Support">Respaldo Internacional</span>
+      <h2 class="section-title" data-es="Marcas con las que Trabajamos" data-en="Brands We Work With">Marcas con las que Trabajamos</h2>
+      <p style="color: #475569; max-width: 750px; margin: 0 auto 10px auto;" data-es="Garantizamos tecnología de punta y calidad en cada producto para satisfacer las necesidades de laboratorios y profesionales de la salud en Panamá:" data-en="We guarantee state-of-the-art technology and quality in every product to meet the needs of laboratories and health professionals in Panama:">
+        Garantizamos tecnología de punta y calidad en cada producto para satisfacer las necesidades de laboratorios y profesionales de la salud en Panamá:
+      </p>
+
+      <div class="brands-grid-official">
+        <!-- 1. Genrui -->
+        <div class="brand-official-card brand-card-genrui">
+          <span class="brand-number-tag">01</span>
+          <span class="brand-typography-name">GENRUI BIOTECH</span>
+          <span class="brand-pill-category">Hematología & Química</span>
+        </div>
+
+        <!-- 2. Cypress -->
+        <div class="brand-official-card brand-card-cypress">
+          <span class="brand-number-tag">02</span>
+          <span class="brand-typography-name">CYPRESS DIAGNOSTICS</span>
+          <span class="brand-pill-category">Reactivos & Diagnóstico</span>
+        </div>
+
+        <!-- 3. Labnovation -->
+        <div class="brand-official-card brand-card-labnovation">
+          <span class="brand-number-tag">03</span>
+          <span class="brand-typography-name">LABNOVATION</span>
+          <span class="brand-pill-category">HbA1c & Controles</span>
+        </div>
+
+        <!-- 4. Seamaty -->
+        <div class="brand-official-card brand-card-seamaty">
+          <span class="brand-number-tag">04</span>
+          <span class="brand-typography-name">SEAMATY</span>
+          <span class="brand-pill-category">Soluciones POCT</span>
+        </div>
+
+        <!-- 5. All Test -->
+        <div class="brand-official-card brand-card-alltest">
+          <span class="brand-number-tag">05</span>
+          <span class="brand-typography-name">ALLTEST</span>
+          <span class="brand-pill-category">Pruebas Rápidas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANALES OFICIALES DE ATENCIÓN CORPORATIVA -->
+  <section id="contacto" class="section-padding" style="background-color: var(--bg-surface); position: relative; overflow: hidden; border-top: 1px solid var(--border-color);">
+    <!-- Elementos decorativos de luz de fondo -->
+    <div style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(2, 132, 199, 0.08) 0%, rgba(0,0,0,0) 70%); pointer-events: none;"></div>
+
+    <div class="container fade-up" style="position: relative; z-index: 1;">
+      <div style="text-align: center; max-width: 750px; margin: 0 auto 48px auto;">
+        <span class="section-tag" data-es="Atención Inmediata Panamá" data-en="Immediate Panama Support" style="background: #bae6fd; color: #0369a1; font-weight: 800; padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; letter-spacing: 1px;">
+          CANALES OFICIALES MEGALAB
+        </span>
+        <h2 class="section-title" style="margin-top: 14px; font-size: 2.2rem; color: #075985;" data-es="Canales Directos de Atención" data-en="Direct Contact Channels">
+          Canales Directos de Atención
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.6;" data-es="Conéctate con nuestro equipo de asesores comerciales y soporte técnico para cotizaciones, insumos y asistencia en Panamá:" data-en="Connect with our sales and technical team for quotes, supplies, and assistance in Panama:">
+          Conéctate con nuestro equipo de asesores comerciales y soporte técnico para cotizaciones, insumos y asistencia en Panamá:
+        </p>
+      </div>
+
+      <div class="contact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px;">
+        
+        <!-- 1. WhatsApp Corporativo Card -->
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(2, 132, 199, 0.06);" onmouseover="this.style.borderColor='#25D366'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)';">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+              <div style="width: 56px; height: 56px; background: rgba(37, 211, 102, 0.12); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: #25D366;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.893 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.149 4.197 4.192-1.098z"/></svg>
+              </div>
+              <span style="background: rgba(37, 211, 102, 0.15); color: #16a34a; font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: 20px;">RESPUESTA RÁPIDA</span>
+            </div>
+
+            <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;">Atención Comercial WhatsApp</span>
+            <h3 style="font-size: 1.35rem; color: #075985; font-weight: 800; margin: 6px 0 12px 0;">+507 6276-2439</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+              Cotización inmediata de equipos, reactivos e insumos analíticos directamente con nuestro equipo técnico.
+            </p>
+          </div>
+
+          <div style="margin-top: 28px;">
+            <a href="https://wa.me/50762762439" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: #25D366; color: #ffffff; font-weight: 800; padding: 14px 20px; border-radius: 10px; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35); transition: all 0.2s ease;">
+              <span>Iniciar Chat en WhatsApp</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Instagram Oficial Card -->
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(2, 132, 199, 0.06);" onmouseover="this.style.borderColor='#E1306C'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)';">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+              <div style="width: 56px; height: 56px; background: rgba(225, 48, 108, 0.12); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: #E1306C;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <span style="background: rgba(225, 48, 108, 0.15); color: #E1306C; font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: 20px;">COMUNIDAD OFICIAL</span>
+            </div>
+
+            <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;">Instagram Institucional</span>
+            <h3 style="font-size: 1.35rem; color: #075985; font-weight: 800; margin: 6px 0 12px 0;">@megalabpa</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+              Conoce nuestro stock constante, demostraciones de equipos en video y actualizaciones en Panamá.
+            </p>
+          </div>
+
+          <div style="margin-top: 28px;">
+            <a href="https://www.instagram.com/megalabpa/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #ffffff; font-weight: 800; padding: 14px 20px; border-radius: 10px; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 18px rgba(225, 48, 108, 0.35); transition: all 0.2s ease;">
+              <span>Visitar Instagram @megalabpa</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Correo Corporativo Card -->
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(2, 132, 199, 0.06);" onmouseover="this.style.borderColor='var(--accent-cyan)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)';">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+              <div style="width: 56px; height: 56px; background: #e0f2fe; border-radius: 14px; display: flex; align-items: center; justify-content: center; color: var(--accent-cyan);">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <span style="background: #bae6fd; color: #0369a1; font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: 20px;">CANAL INSTITUCIONAL</span>
+            </div>
+
+            <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;">Correo de Administración</span>
+            <h3 style="font-size: 1.2rem; color: #075985; font-weight: 800; margin: 6px 0 12px 0; word-break: break-all;">admin@megalabpa.com</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+              Envío de órdenes de compra, documentación licitatoria y solicitudes formales para laboratorios.
+            </p>
+          </div>
+
+          <div style="margin-top: 28px;">
+            <!-- Único Botón Directo: Abre la ventana de redacción de correo con destinatario pre-llenado -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@megalabpa.com&su=Consulta%20Institucional%20MEGA%20LAB" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--cyan-gradient); color: #ffffff; font-weight: 800; padding: 14px 20px; border-radius: 10px; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 18px rgba(2, 132, 199, 0.35); transition: all 0.2s ease;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.272H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.545l8.073-6.052C21.69 2.279 24 3.434 24 5.457z"/></svg>
+              <span>Redactar Correo a admin@megalabpa.com</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner Inferior de Cobertura Nacional -->
+      <div style="margin-top: 40px; background: #bae6fd; border: 1px solid #7dd3fc; border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <div style="width: 42px; height: 42px; background: #7dd3fc; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #075985; flex-shrink: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div>
+            <h4 style="color: #075985; font-size: 1rem; font-weight: 700; margin-bottom: 2px;">Distribución y Cobertura Nacional en Panamá</h4>
+            <p style="color: #334155; font-size: 0.88rem; margin: 0;">Atendemos laboratorios clínicos, hospitales y centros de salud en todas las provincias de la República de Panamá.</p>
+          </div>
+        </div>
+        <a href="#inicio" style="color: #0369a1; font-weight: 800; font-size: 0.88rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+          Volver al Inicio ↑
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER INSTITUCIONAL COMPACTO -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom: 8px; display: flex; align-items: center;">
+            <img src="assets/logo-oficial.png" alt="MEGA LAB Logo" style="height: 36px; width: auto; display: block; filter: drop-shadow(0 2px 8px rgba(0, 229, 255, 0.25));">
+          </div>
+          <p style="max-width: 380px; font-size: 0.82rem; color: #94a3b8; line-height: 1.4;" data-es="MEGA LAB - Equipos, Insumos y Reactivos Clínicos en Panamá. Aliados estratégicos para la salud y diagnóstico analítico." data-en="MEGA LAB - Equipment, Supplies & Clinical Reagents in Panama. Strategic partners for health and analytical diagnostics.">
+            MEGA LAB - Equipos, Insumos y Reactivos Clínicos en Panamá. Aliados estratégicos para la salud y diagnóstico analítico.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color: #ffffff; font-weight: 700; margin-bottom: 8px; font-size: 0.9rem;" data-es="Secciones" data-en="Navigation">Secciones</h4>
+          <ul style="list-style: none; line-height: 1.8; font-size: 0.83rem;">
+            <li><a href="#equipos" data-es="Equipos Clínicos" data-en="Clinical Equipment">Equipos Clínicos</a></li>
+            <li><a href="#reactivos" data-es="Reactivos e Insumos" data-en="Reagents & Disposables">Reactivos e Insumos</a></li>
+            <li><a href="#contacto" data-es="Canales de Atención" data-en="Corporate Support">Canales de Atención</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: #ffffff; font-weight: 700; margin-bottom: 8px; font-size: 0.9rem;" data-es="Cumplimiento Sanitario" data-en="Regulatory Compliance">Cumplimiento Sanitario</h4>
+          <ul style="list-style: none; line-height: 1.8; color: #94a3b8; font-size: 0.83rem;">
+            <li><span data-es="Estándar ISO 13485:2016" data-en="ISO 13485:2016 Standard">Estándar ISO 13485:2016</span></li>
+            <li><span data-es="Cumplimiento CE / IVD" data-en="CE / IVD Compliance">Cumplimiento CE / IVD</span></li>
+            <li><span data-es="Llegamos a toda Panamá" data-en="Coverage All Over Panama">Llegamos a toda Panamá</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 MEGA LAB | Equipos, Insumos y Reactivos Clínicos. Todos los derechos reservados.
+        </div>
+        <div style="font-family: monospace; font-size: 0.76rem; font-weight: 700; color: var(--accent-cyan);">
+          MEGA LAB PANAMÁ // CANALES DE ATENCIÓN OFICIALES
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE SOLICITUD INSTITUCIONAL -->
+  <div id="inquiryModal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="toggleModal(false)">&times;</button>
+      <h3 style="color: #075985; font-size: 1.3rem; margin-bottom: 6px;">Solicitud de Asesoría Técnica</h3>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 20px;">
+        Ingresa tus datos para coordinar atención directa con un representante de Mega Lab:
+      </p>
+
+      <form onsubmit="handleModalSubmit(event)">
+        <div class="modal-form-group">
+          <label class="modal-label">Nombre o Institución / Clínica</label>
+          <input type="text" id="modalInstName" class="modal-input" placeholder="Ej. Laboratorio Clínico Central" required>
+        </div>
+        <div class="modal-form-group">
+          <label class="modal-label">Teléfono de Contacto / WhatsApp</label>
+          <input type="tel" id="modalPhone" class="modal-input" placeholder="+507 6000-0000" required>
+        </div>
+        <div class="modal-form-group">
+          <label class="modal-label">Área o Equipo de Interés</label>
+          <input type="text" id="modalInterest" class="modal-input" placeholder="Ej. Hematología Genrui / Reactivos">
+        </div>
+
+        <button type="submit" class="btn-institutional-primary" style="width: 100%; justify-content: center; margin-top: 10px;">
+          Enviar Solicitud por WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT NATIVO CON DATOS EXTRAÍDOS DEL CATÁLOGO PDF -->
+  <script>
+    // 1. Selector Multidioma
+    function switchLanguage(lang) {
+      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+      const elements = document.querySelectorAll('[data-es][data-en]');
+      elements.forEach(el => {
+        el.textContent = (lang === 'en') ? el.getAttribute('data-en') : el.getAttribute('data-es');
+      });
+
+      document.documentElement.lang = lang;
+    }
+
+    // 2. Lógica del Carrusel
+    let currentSlide = 0;
+    const slidesTrack = document.getElementById('slidesTrack');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = dots.length;
+    let autoSlideTimer;
+
+    function updateSlider() {
+      slidesTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentSlide);
+      });
+    }
+
+    function moveSlide(direction) {
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      updateSlider();
+      resetTimer();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateSlider();
+      resetTimer();
+    }
+
+    function startTimer() {
+      autoSlideTimer = setInterval(() => {
+        moveSlide(1);
+      }, 5000);
+    }
+
+    function resetTimer() {
+      clearInterval(autoSlideTimer);
+      startTimer();
+    }
+
+    // Soporte táctil / swipe móvil
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const sliderFrame = document.getElementById('sliderFrame');
+
+    sliderFrame.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    sliderFrame.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 50) moveSlide(1);
+      if (touchEndX - touchStartX > 50) moveSlide(-1);
+    }, { passive: true });
+
+    sliderFrame.addEventListener('mouseenter', () => clearInterval(autoSlideTimer));
+    sliderFrame.addEventListener('mouseleave', () => startTimer());
+
+    // 3. Copiar Correo y Notificación Toast
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.textContent = msg;
+      toast.style.transform = 'translateX(-50%) translateY(0)';
+      toast.style.opacity = '1';
+      setTimeout(() => {
+        toast.style.transform = 'translateX(-50%) translateY(100px)';
+        toast.style.opacity = '0';
+      }, 3500);
+    }
+
+    function copyEmailToClipboard() {
+      const email = 'admin@megalabpa.com';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(() => {
+          showToast('¡Correo admin@megalabpa.com copiado al portapapeles!');
+        }).catch(() => {
+          fallbackCopy(email);
+        });
+      } else {
+        fallbackCopy(email);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const input = document.createElement('input');
+      input.value = text;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+      showToast('¡Correo admin@megalabpa.com copiado al portapapeles!');
+    }
+
+    function handleEmailClick(e) {
+      copyEmailToClipboard();
+    }
+
+    // 4. BASE DE DATOS EXACTA EXTRAÍDA DEL CATÁLOGO EN PDF MEGALAB
+    const catalogCategories = {
+      quimica: {
+        title: "Reactivos de Química",
+        brand: "Proveedor Oficial: Cypress Diagnostics",
+        desc: "Línea completa de bioquímica clínica para determinaciones enzimáticas, sustratos y electrolitos.",
+        typeTag: "Cypress Diagnostics",
+        items: [
+          "Glucosa", "BUN", "Creatinina", "Ácido Úrico", "Colesterol Total", "Triglicéridos",
+          "HDL Colesterol", "LDL Colesterol", "Apolipoproteína B", "Apolipoproteína A",
+          "AST", "ALT", "Bilirrubina Total", "Bilirrubina Directa", "LDH", "Fosfatasa Alcalina",
+          "GGT", "Proteína Total", "Albúmina", "Calcio", "Fósforo", "Magnesio", "Zinc",
+          "Hierro", "TIBC", "Amilasa", "Lipasa", "CK Nac", "Proteína Total en Orina"
+        ]
+      },
+      hematologia: {
+        title: "Reactivos & Analizadores de Hematología",
+        brand: "Proveedor Oficial: Genrui Biotech",
+        desc: "Equipos automatizados de hematología (3-Diff / 5-Diff), reactivos de lisis, diluyentes y controles de calidad.",
+        typeTag: "Genrui Hematología",
+        items: [
+          "Analizador Hematológico Genrui (3-Diff / 5-Diff)", "Diluyente Genrui Hematología", "Lisoterm Genrui",
+          "Limpiador Enzimático Genrui", "Detergente Hemolítico", "Control Hematológico Nivel Bajo",
+          "Control Hematológico Nivel Normal", "Control Hematológico Nivel Alto", "Calibrador de Hematología",
+          "Solución de Lavado Concentrada", "Reactivo de Recuento de Reticulocitos", "Solución Desproteinizante"
+        ]
+      },
+      pa50: {
+        title: "Nefelometría (Analizador PA50 & Proteínas Específicas)",
+        brand: "Proveedor Oficial: Genrui Biotech",
+        desc: "Kits de reactivos específicos cuantificados por nefelometría para el analizador automático Genrui PA50.",
+        typeTag: "Nefelometría (PA50)",
+        items: [
+          "HbA1c (Nefelometría)", "hs-CRP (Proteína C Reactiva Ultra Sensible)", "Microalbúmina (mALB)",
+          "ASO (Antiestreptolisina O)", "RF (Factor Reumatoideo)", "PCR (Proteína C Reactiva)", "CCP (Péptido Citrulinado Cíclico)",
+          "IgA (Inmunoglobulina A)", "IgM (Inmunoglobulina M)", "IgG (Inmunoglobulina G)",
+          "C3 (Complemento C3)", "C4 (Complemento C4)", "Dímero D (Nefelometría)", "Ferritina"
+        ]
+      },
+      fa50: {
+        title: "Inmunoensayo (Equipos FA50 & AFR-600)",
+        brand: "Proveedores Oficiales: Genrui Biotech / FIATEST / ALL TEST",
+        desc: "Línea completa de inmunoensayo por inmunofluorescencia y detección seca para equipos FA50 y AFR-600.",
+        typeTag: "Inmunoensayo (FA50 / AFR-600)",
+        items: [
+          "HbA1c (FA50)", "T4 Total", "T3 Total", "TSH", "T4 Libre", "T3 Libre", "Ferritina", "Vitamina D 25OH",
+          "IgE", "Procalcitonina (PCT)", "PCR Cuantitativa", "IL-6 (Interleucina 6)", "NT-proBNP", "Troponina I (cTnI)",
+          "Mioglobina (Myo)", "CK-MB", "Dímero D", "β-HCG Cuantitativa", "LH", "FSH", "Prolactina", "Progesterona",
+          "Testosterona Total", "AMH Mülleriana", "Estradiol E2", "Cortisol", "PSA Total", "PSA Libre", "CEA", "AFP",
+          "CA 125", "CA 15-3", "CA 19-9", "Microalbúmina", "H. Pylori Antígeno", "Calprotectina (AFR-600)",
+          "Sangre Oculta Cuantificada (AFR-600)", "Vitamina B12 (AFR-600)", "Folato (AFR-600)", "Cocaína Cuantificada (AFR-600)",
+          "THC Cuantificada (AFR-600)", "CCP", "ASO", "Factor Reumatoideo", "Insulina"
+        ]
+      },
+      electrolitos: {
+        title: "Pruebas de Electrolitos y Gases (SE1 / SG1)",
+        brand: "Proveedor Oficial: Seamaty",
+        desc: "Paneles para analizadores portátiles de electrolitos y gases arteriales Seamaty SE1 y SG1.",
+        typeTag: "Seamaty SE1 / SG1",
+        items: [
+          "K+ (Potasio)", "Na+ (Sodio)", "Cl- (Cloro)", "Ca++ (Calcio Iónico)", "pH (Potencial de Hidrógeno)", "Li (Litio)", "Gases Arteriales"
+        ]
+      },
+      hplc: {
+        title: "Reactivos de HPLC (LD-560)",
+        brand: "Proveedor Oficial: Labnovation",
+        desc: "Eluyentes y estándares para el analizador automático de HbA1c Labnovation LD-560.",
+        typeTag: "Labnovation LD-560",
+        items: [
+          "HbA1c Gold Estándar", "Cuantificación de Hemoglobina A", "Cuantificación de Hemoglobina A2",
+          "Cuantificación de Hemoglobina F", "Cuantificación de Hemoglobina S", "Cuantificación de Hemoglobina C",
+          "Cuantificación de Hemoglobina D", "Eluent A (Labnovation)", "Eluent B (Labnovation)"
+        ]
+      },
+      latex: {
+        title: "Reactivos de Aglutinación en Látex",
+        brand: "Proveedor Oficial: Cypress Diagnostics",
+        desc: "Determinaciones serológicas por aglutinación rápida en lámina.",
+        typeTag: "Cypress Diagnostics",
+        items: [
+          "Tipaje y Rh", "RPR", "VDRL", "PCR", "ASO", "Factor Reumatoideo", "Rosa de Bengala", "Antígenos Febriles"
+        ]
+      },
+      rapidas: {
+        title: "Kits de Pruebas Rápidas",
+        brand: "Proveedores Oficiales: ALL TEST / Cypress Diagnostics",
+        desc: "Inmunocromatografía de lectura rápida para diagnósticos infecciosos, endocrinos y tóxicos.",
+        typeTag: "ALL TEST / Cypress",
+        items: [
+          "Hepatitis C", "Hepatitis B (HbsAg)", "Hepatitis B (Core Total)", "H. Pylori Antígeno", "H. Pylori Ab",
+          "Influenza A+B", "Panel Respiratorio 3 Test (InfluA+B, RSV, SARSCOV2)",
+          "Panel Respiratorio 5 Test (InfluA+B, RSV, SARSCOV2, Adenovirus, M. Pneumoniae)",
+          "Monotest", "Mycoplasma IgG/IgM", "HSV 1/2 IgG/IgM", "Calprotectina", "Sangre Oculta", "Hepatitis A",
+          "Lactoferrina", "Cryptosporidium", "Giardia", "Chlamydia IgM", "Panel Alergia (Alérgenos Respiratorios y Alimentarios)",
+          "Cocaína", "Marihuana", "Doping DUO", "Alcoholemia", "Cotinina", "HCG", "CMV IgG", "CMV IgM",
+          "Rubeola IgG", "Rubeola IgM", "Toxo IgG", "Toxo IgM", "HIV 1/2", "Sífilis", "Dengue IgG/IgM/NS1"
+        ]
+      },
+      insumos: {
+        title: "Instrumentos, Insumos & Tinciones",
+        brand: "Proveedores: CYANSTRIP / Seamaty / Genrui / Cypress",
+        desc: "Equipos menores de laboratorio, consumibles plásticos y soluciones para coloración.",
+        typeTag: "Mega Lab Insumos",
+        items: [
+          "Microscopios", "Rotadores", "Incubadoras", "Centrífugas", "Soporte de Pipetas", "Micropipetas", "Contador de Células",
+          "Lector de Tiras CYANStrip Mini", "Tiras de Orina 10 Parámetros", "Tiras de Orina 2 Parámetros (Microalbúmina-Creatinina)",
+          "Puntas Amarillas", "Puntas Azules", "Puntas Blancas", "Portaobjetos", "Cubreobjetos", "Guantes", "Aceite de Inmersión",
+          "Tinción Wright", "Tinción Gram", "Tinción Ziehl Neelsen", "Tinción Lugol"
+        ]
+      }
+    };
+
+    function renderCategoryGrid(items, typeTag) {
+      return items.map(item => `
+        <div class="reagent-item-card">
+          <div class="reagent-name">${item}</div>
+          <div class="reagent-meta">
+            <span class="reagent-meta-dot"></span>
+            <span>${typeTag}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function selectCategory(catKey) {
+      document.getElementById('reagentSearchInput').value = '';
+      const cat = catalogCategories[catKey];
+      if (!cat) return;
+
+      document.querySelectorAll('.reagent-cat-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-cat') === catKey);
+      });
+
+      const titleEl = document.getElementById('catPanelTitle');
+      const brandEl = document.getElementById('catPanelBrand');
+      const descEl = document.getElementById('catPanelDesc');
+      const gridEl = document.getElementById('catPanelGrid');
+      const waLink = document.getElementById('catPanelWaLink');
+
+      titleEl.textContent = cat.title;
+      brandEl.textContent = cat.brand;
+      descEl.textContent = cat.desc;
+      waLink.href = "https://wa.me/50762762439?text=" + encodeURIComponent("Hola, solicito información sobre " + cat.title);
+
+      gridEl.innerHTML = renderCategoryGrid(cat.items, cat.typeTag);
+    }
+
+    // 5. BUSCADOR EN TIEMPO REAL CON DATOS DEL PDF
+    function searchItems(query) {
+      const q = query.toLowerCase().trim();
+      if (!q) {
+        const activeBtn = document.querySelector('.reagent-cat-btn.active');
+        if (activeBtn) selectCategory(activeBtn.getAttribute('data-cat'));
+        return;
+      }
+
+      document.querySelectorAll('.reagent-cat-btn').forEach(btn => btn.classList.remove('active'));
+
+      let matches = [];
+      Object.keys(catalogCategories).forEach(catKey => {
+        const cat = catalogCategories[catKey];
+        cat.items.forEach(item => {
+          if (item.toLowerCase().includes(q)) {
+            matches.push({ item, catTitle: cat.title, typeTag: cat.typeTag });
+          }
+        });
+      });
+
+      const titleEl = document.getElementById('catPanelTitle');
+      const brandEl = document.getElementById('catPanelBrand');
+      const descEl = document.getElementById('catPanelDesc');
+      const gridEl = document.getElementById('catPanelGrid');
+
+      titleEl.textContent = `Búsqueda: "${query}"`;
+      brandEl.textContent = `${matches.length} coincidencia(s) en catálogo`;
+      descEl.textContent = "Resultados encontrados en el catálogo de productos de Mega Lab:";
+
+      if (matches.length === 0) {
+        gridEl.innerHTML = `<div style="grid-column: 1/-1; color: var(--text-muted); padding: 20px 0;">No se encontraron resultados para "${query}".</div>`;
+      } else {
+        gridEl.innerHTML = matches.map(m => `
+          <div class="reagent-item-card">
+            <div class="reagent-name">${m.item}</div>
+            <div class="reagent-meta">
+              <span class="reagent-meta-dot"></span>
+              <span>${m.catTitle}</span>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    // 6. MANEJO DEL MODAL
+    function toggleModal(show) {
+      const modal = document.getElementById('inquiryModal');
+      modal.classList.toggle('active', show);
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const instName = document.getElementById('modalInstName').value;
+      const phone = document.getElementById('modalPhone').value;
+      const interest = document.getElementById('modalInterest').value;
+
+      const message = `Hola, mi nombre/institución es ${instName} (${phone}). Quisiera solicitar atención técnica sobre: ${interest}`;
+      window.open(`https://wa.me/50762762439?text=${encodeURIComponent(message)}`, '_blank');
+      toggleModal(false);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      if (toast && toastMsg) {
+        toastMsg.textContent = msg;
+        toast.style.opacity = '1';
+        toast.style.transform = 'translateX(-50%) translateY(0)';
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateX(-50%) translateY(100px)';
+        }, 3500);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      startTimer();
+      selectCategory('quimica');
+    });
+  </script>
+
+  <!-- Componente Toast de Notificación -->
+  <div id="toastNotification" style="position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(100px); background: #0a192f; border: 1px solid var(--accent-cyan); color: #fff; padding: 14px 24px; border-radius: 8px; font-size: 0.92rem; font-weight: 600; box-shadow: 0 10px 30px rgba(0, 229, 255, 0.4); opacity: 0; transition: all 0.4s ease; z-index: 9999; display: flex; align-items: center; gap: 10px; pointer-events: none;">
+    <span style="color: var(--accent-cyan); font-size: 1.2rem; font-weight: bold;">✓</span>
+    <span id="toastMessage">Correo copiado al portapapeles</span>
+  </div>
+</body>
+</html>
