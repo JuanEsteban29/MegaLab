@@ -291,10 +291,16 @@
     }
 
     .brand-logo-card img {
-      max-height: 55px;
-      max-width: 175px;
+      max-height: 60px;
+      max-width: 180px;
+      width: auto;
+      height: auto;
       object-fit: contain;
-      image-rendering: high-quality;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.03));
     }
 
     .brand-logo-card .brand-pill {
